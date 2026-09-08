@@ -1,0 +1,1989 @@
+<section class="premium-hero" aria-label="Interactive airborne droplet field">
+  <div class="atmosphere atmosphere-cyan"></div>
+  <div class="atmosphere atmosphere-blue"></div>
+  <div class="atmosphere atmosphere-violet"></div>
+  <div class="atmosphere atmosphere-green"></div>
+
+  <div class="aurora aurora-a"></div>
+  <div class="aurora aurora-b"></div>
+
+  <div class="cursor-light"></div>
+  <div class="grain"></div>
+
+  <canvas id="premiumDroplets"></canvas>
+</section>
+
+<style>
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    background: #01020a;
+  }
+
+  .premium-hero {
+    --mx: 72%;
+    --my: 48%;
+
+    position: relative;
+
+    width: 100vw;
+    max-width: none;
+
+    min-height: 590px;
+    height: 100vh;
+
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+    isolation: isolate;
+
+    background-color: #01020a;
+
+    /*
+      Much darker overall.
+
+      The upper ~55% stays nearly black/navy.
+      Most colour lives in the lower third.
+    */
+    background-image:
+
+      /* NEAR-BLACK TOP */
+      radial-gradient(
+        ellipse at -12% 50%,
+        rgba(0, 1, 6, 1) 0%,
+        rgba(1, 3, 12, 1) 34%,
+        rgba(2, 7, 20, .98) 55%,
+        rgba(3, 12, 31, .90) 72%,
+        transparent 88%
+      ),
+
+      /* DARK NAVY MID-FIELD */
+      radial-gradient(
+        ellipse at 48% 48%,
+        rgba(5, 20, 47, .58) 0%,
+        rgba(4, 15, 37, .46) 42%,
+        rgba(2, 8, 22, .18) 68%,
+        transparent 82%
+      ),
+
+      /* CYAN - LOWER RIGHT ONLY */
+      radial-gradient(
+        ellipse at 98% 84%,
+        rgba(35, 184, 255, .24) 0%,
+        rgba(17, 110, 204, .15) 24%,
+        rgba(7, 55, 112, .08) 42%,
+        transparent 60%
+      ),
+
+      /* DEEP BLUE LOWER CENTRE */
+      radial-gradient(
+        ellipse at 92% 57%,
+        rgba(28, 128, 233, .18) 0%,
+        rgba(11, 71, 151, .12) 28%,
+        transparent 56%
+      ),
+
+      /* PURPLE LOWER LEFT */
+      radial-gradient(
+        ellipse at 100% 15%,
+        rgba(159, 100, 255, .26) 0%,
+        rgba(105, 70, 214, .16) 25%,
+        rgba(61, 43, 148, .08) 45%,
+        transparent 62%
+      ),
+
+      /* PURPLE ACCENT LOWER MID */
+      radial-gradient(
+        ellipse at 88% 42%,
+        rgba(128, 95, 245, .11) 0%,
+        transparent 45%
+      ),
+
+      /* SUBTLE GREEN TINGE */
+      radial-gradient(
+        ellipse at 90% 28%,
+        rgba(62, 222, 174, .17) 0%,
+        rgba(27, 143, 135, .09) 28%,
+        transparent 48%
+      ),
+
+      /* BASE GRADIENT */
+      linear-gradient(
+        90deg,
+        #000107 0%,
+        #01030c 20%,
+        #020817 38%,
+        #031126 55%,
+        #061d38 72%,
+        #082a4b 87%,
+        #0a3a61 100%
+      );
+
+    box-shadow:
+      inset 0 0 0 1px rgba(255,255,255,.025),
+      inset -180px 0 240px rgba(14,85,145,.08);
+  }
+
+  .premium-hero::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    z-index: 0;
+    pointer-events: none;
+
+    /*
+      Extra darkening over top / centre.
+    */
+    background:
+      linear-gradient(
+        90deg,
+        rgba(0,0,0,.48) 0%,
+        rgba(0,0,0,.30) 27%,
+        rgba(0,0,0,.10) 52%,
+        rgba(0,0,0,0) 72%
+      ),
+
+      radial-gradient(
+        ellipse at 18% 50%,
+        rgba(0,0,0,.36) 0%,
+        rgba(0,0,0,.16) 45%,
+        transparent 76%
+      ),
+
+      radial-gradient(
+        ellipse at 92% 18%,
+        rgba(160, 105, 255, .06) 0%,
+        transparent 38%
+      );
+  }
+
+  #premiumDroplets {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    z-index: 5;
+
+    background: transparent;
+  }
+
+  .atmosphere,
+  .aurora,
+  .cursor-light,
+  .grain {
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .atmosphere {
+    z-index: 1;
+
+    border-radius: 999px;
+
+    filter: blur(110px);
+
+    will-change: transform;
+  }
+
+  .atmosphere-cyan {
+    width: 720px;
+    height: 520px;
+
+    right: -160px;
+    bottom: -290px;
+
+    background:
+      rgba(38, 190, 255, .20);
+  }
+
+  .atmosphere-blue {
+    width: 700px;
+    height: 520px;
+
+    left: 22%;
+    bottom: -300px;
+
+    background:
+      rgba(25, 108, 231, .17);
+  }
+
+  .atmosphere-violet {
+    width: 650px;
+    height: 500px;
+
+    left: -220px;
+    bottom: -260px;
+
+    background:
+      rgba(159, 102, 255, .20);
+  }
+
+  .atmosphere-green {
+    width: 430px;
+    height: 330px;
+
+    left: 7%;
+    bottom: -170px;
+
+    background:
+      rgba(59, 214, 170, .16);
+  }
+
+  .aurora {
+    z-index: 2;
+
+    width: 92%;
+    height: 270px;
+
+    left: -8%;
+
+    border-radius: 50%;
+
+    filter: blur(34px);
+
+    mix-blend-mode: screen;
+
+    will-change:
+      transform,
+      opacity;
+  }
+
+  .aurora-a {
+    bottom: -7%;
+
+    opacity: .23;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(74, 221, 191, .12),
+        rgba(57, 195, 255, .22),
+        rgba(54, 136, 255, .22),
+        rgba(158, 103, 255, .18),
+        transparent 90%
+      );
+  }
+
+  .aurora-b {
+    left: 16%;
+    top: 58%;
+
+    opacity: .11;
+
+    background:
+      linear-gradient(
+        90deg,
+        transparent,
+        rgba(66, 176, 255, .10),
+        rgba(107, 151, 255, .14),
+        rgba(174, 120, 255, .12),
+        transparent
+      );
+  }
+
+  .cursor-light {
+    z-index: 3;
+
+    width: 390px;
+    height: 390px;
+
+    left: calc(var(--mx) - 195px);
+    top: calc(var(--my) - 195px);
+
+    border-radius: 999px;
+
+    opacity: 0;
+
+    transition:
+      opacity 180ms ease;
+
+    background:
+      radial-gradient(
+        circle,
+        rgba(140, 225, 255, .12) 0%,
+        rgba(76, 176, 255, .055) 35%,
+        rgba(127, 115, 244, .035) 50%,
+        transparent 72%
+      );
+
+    filter: blur(9px);
+  }
+
+  .premium-hero.is-active .cursor-light {
+    opacity: 1;
+  }
+
+  .grain {
+    inset: 0;
+
+    z-index: 6;
+
+    opacity: .015;
+
+    background-image:
+      radial-gradient(
+        circle at 20% 30%,
+        rgba(255,255,255,.55) 0 .5px,
+        transparent .7px
+      ),
+
+      radial-gradient(
+        circle at 70% 60%,
+        rgba(255,255,255,.40) 0 .45px,
+        transparent .65px
+      );
+
+    background-size:
+      13px 13px,
+      17px 17px;
+
+    mix-blend-mode:
+      soft-light;
+  }
+
+  @media (max-width: 640px) {
+    .premium-hero {
+      min-height: 100svh;
+      height: 100svh;
+    }
+  }
+  /* Concentrate the atmospheric lighting along the right-hand edge. */
+  .atmosphere-cyan { left: auto; right: -290px; top: -160px; bottom: auto; }
+  .atmosphere-blue { left: auto; right: -300px; top: 22%; bottom: auto; }
+  .atmosphere-violet { left: auto; right: -260px; top: auto; bottom: -220px; }
+  .atmosphere-green { left: auto; right: -170px; top: auto; bottom: 7%; }
+  .aurora-a { width: 270px; height: 92%; left: auto; right: -7%; top: -8%; bottom: auto; }
+  .aurora-b { width: 270px; height: 92%; left: 58%; top: 16%; }
+</style>
+
+<script>
+(() => {
+
+  const hero =
+    document.querySelector(
+      ".premium-hero"
+    );
+
+  const canvas =
+    document.getElementById(
+      "premiumDroplets"
+    );
+
+  const ctx =
+    canvas.getContext(
+      "2d",
+      {
+        alpha: true
+      }
+    );
+
+  const cyan =
+    document.querySelector(
+      ".atmosphere-cyan"
+    );
+
+  const blue =
+    document.querySelector(
+      ".atmosphere-blue"
+    );
+
+  const violet =
+    document.querySelector(
+      ".atmosphere-violet"
+    );
+
+  const green =
+    document.querySelector(
+      ".atmosphere-green"
+    );
+
+  const auroraA =
+    document.querySelector(
+      ".aurora-a"
+    );
+
+  const auroraB =
+    document.querySelector(
+      ".aurora-b"
+    );
+
+  let W = 0;
+  let H = 0;
+  let DPR = 1;
+
+  let last =
+    performance.now();
+
+  const far = [];
+  const mid = [];
+  const near = [];
+
+  const mouse = {
+    x: 0,
+    y: 0,
+
+    tx: 0,
+    ty: 0,
+
+    active: false,
+
+    speed: 0,
+
+    lastX: 0,
+    lastY: 0,
+
+    nx: 0,
+    ny: 0,
+
+    vx: 0,
+    vy: 0
+  };
+
+  const rand =
+    (a, b) =>
+      a +
+      Math.random() *
+      (b - a);
+
+
+  function resize() {
+
+    const rect =
+      hero.getBoundingClientRect();
+
+    W =
+      Math.max(
+        320,
+        Math.round(
+          rect.width
+        )
+      );
+
+    H =
+      Math.max(
+        430,
+        Math.round(
+          rect.height
+        )
+      );
+
+    DPR =
+      Math.min(
+        window.devicePixelRatio || 1,
+        2
+      );
+
+    canvas.width =
+      Math.round(
+        W * DPR
+      );
+
+    canvas.height =
+      Math.round(
+        H * DPR
+      );
+
+    canvas.style.width =
+      W + "px";
+
+    canvas.style.height =
+      H + "px";
+
+    ctx.setTransform(
+      DPR,
+      0,
+      0,
+      DPR,
+      0,
+      0
+    );
+
+    buildCloud();
+  }
+
+
+  function buildCloud() {
+
+    far.length = 0;
+    mid.length = 0;
+    near.length = 0;
+
+    const scale =
+      Math.min(
+        1.42,
+        Math.max(
+          .82,
+          W / 760
+        )
+      );
+
+    const farCount =
+      Math.round(
+        1800 *
+        scale
+      );
+
+    const midCount =
+      Math.round(
+        800 *
+        scale
+      );
+
+    const nearCount =
+      Math.round(
+        140 *
+        scale
+      );
+
+    for (
+      let i = 0;
+      i < farCount;
+      i++
+    ) {
+      far.push(
+        makeParticle(
+          "far",
+          Math.random() *
+          W
+        )
+      );
+    }
+
+    for (
+      let i = 0;
+      i < midCount;
+      i++
+    ) {
+      mid.push(
+        makeParticle(
+          "mid",
+          Math.random() *
+          W
+        )
+      );
+    }
+
+    for (
+      let i = 0;
+      i < nearCount;
+      i++
+    ) {
+      near.push(
+        makeParticle(
+          "near",
+          Math.random() *
+          W
+        )
+      );
+    }
+  }
+
+
+  function makeParticle(
+    layer,
+    x =
+      -rand(
+        20,
+        W * .15
+      )
+  ) {
+
+    let depth;
+    let r;
+    let alpha;
+    let vx;
+
+    if (
+      layer === "far"
+    ) {
+
+      depth =
+        rand(
+          .05,
+          .34
+        );
+
+      r =
+        rand(
+          .28,
+          .78
+        );
+
+      alpha =
+        rand(
+          .09,
+          .24
+        );
+
+      vx =
+        rand(
+          100,
+          145
+        );
+    }
+
+    else if (
+      layer === "mid"
+    ) {
+
+      depth =
+        rand(
+          .34,
+          .72
+        );
+
+      r =
+        rand(
+          .72,
+          1.45
+        );
+
+      alpha =
+        rand(
+          .16,
+          .40
+        );
+
+      vx =
+        rand(
+          125,
+          175
+        );
+    }
+
+    else {
+
+      depth =
+        rand(
+          .72,
+          1
+        );
+
+      r =
+        Math.random() < .93
+
+          ? rand(
+              1.2,
+              2.05
+            )
+
+          : rand(
+              2.2,
+              3.4
+            );
+
+      alpha =
+        rand(
+          .24,
+          .56
+        );
+
+      vx =
+        rand(
+          150,
+          205
+        );
+    }
+
+    // Bias origins upward without a hard horizontal cutoff.
+    // Averaging random samples gives the lower edge a soft, irregular falloff.
+    const spread = (Math.random() + Math.random() + Math.random()) / 3;
+    const yStart = H * (.88 - .98 * Math.sqrt(spread)) + rand(-35, 35);
+    const traceTint = Math.random();
+
+    return {
+      x,
+      y:
+        yStart,
+
+      px:
+        x,
+
+      py:
+        yStart,
+
+      vx,
+
+      vy:
+        rand(
+          -3.5,
+          3.5
+        ),
+
+      r,
+
+      depth,
+
+      alpha,
+
+      phase:
+        rand(
+          0,
+          Math.PI * 2
+        ),
+
+      seed:
+        rand(
+          0,
+          1000
+        ),
+
+      traceTint,
+      trace: null,
+
+      layer
+    };
+  }
+
+
+  function respawn(p) {
+
+    Object.assign(
+      p,
+      makeParticle(
+        p.layer
+      )
+    );
+
+    p.px =
+      p.x;
+
+    p.py =
+      p.y;
+  }
+
+
+  const activeSwirls = [];
+  const swirlHash = n => {
+    const value = Math.sin(n * 127.1 + 311.7) * 43758.5453;
+    return value - Math.floor(value);
+  };
+
+  function prepareSwirls(t) {
+    activeSwirls.length = 0;
+    for (let slot = 0; slot < 3; slot++) {
+      const small = slot > 0;
+      const maxRadius = small ? Math.min(95, W * .13, H * .15) : Math.min(260, W * .34, H * .38);
+      const drift = small ? 65 : 70;
+      // Each cycle lasts long enough for the entire vortex to leave the screen.
+      const travelTime = (W + maxRadius + 100) / drift;
+      const period = travelTime + (small ? 6 : 3);
+      const clock = t + slot * 8.7;
+      const cycle = Math.floor(clock / period);
+      const seed = cycle * 17 + slot * 137;
+      const age = clock - cycle * period - swirlHash(seed + 12) * (small ? 4 : 2);
+      if (age < 0) continue;
+      const radius = maxRadius * (small ? .65 + swirlHash(seed + 3) * .35 : 1);
+      const startX = W * (.08 + swirlHash(seed + 1) * (small ? .42 : .16));
+      const cx = startX + age * drift;
+      if (cx - radius > W + 90) continue;
+      const ramp = Math.min(1, age / (small ? 1.4 : 2));
+      activeSwirls.push({
+        x: cx,
+        y: H * (small ? .08 + swirlHash(seed + 41) * .20 : .18 + swirlHash(seed + 41) * .22),
+        radius, drift,
+        direction: swirlHash(seed + 89) < .5 ? -1 : 1,
+        strength: ramp * ramp * (3 - 2 * ramp)
+      });
+    }
+  }
+  function flowField(
+    x,
+    y,
+    t,
+    d
+  ) {
+
+    const nx =
+      x / W;
+
+    const ny =
+      y / H;
+
+    let u =
+      135 +
+      d * 105;
+
+    let v =
+      0;
+
+
+    u +=
+      Math.sin(
+        ny * 5.8 +
+        t * .85 +
+        d * 2.6
+      ) *
+      14;
+
+
+    u +=
+      Math.cos(
+        nx * 4.2 -
+        t * .55
+      ) *
+      7;
+
+
+    v +=
+      Math.sin(
+        nx * 5.8 -
+        t * 1.28 +
+        d * 2.8
+      ) *
+      27;
+
+
+    v +=
+      Math.sin(
+        nx * 12 +
+        ny * 5.1 -
+        t * 2.0
+      ) *
+      8;
+
+
+    // A broad, gentle wave plus a smaller depth-dependent eddy.
+    // Both vary smoothly, avoiding jitter while adding curved trajectories.
+    v += Math.sin(nx * 3.4 - t * .72 + ny * 2.6) * 16;
+    v += Math.sin(nx * 16 + ny * 8 - t * 1.15 + d * 4) * 4;
+
+    const centre =
+      .53 +
+      Math.sin(
+        nx * 3.7 -
+        t * .75
+      ) *
+      .07;
+
+
+    const band =
+      Math.abs(
+        ny -
+        centre
+      );
+
+
+    if (
+      band < .36
+    ) {
+
+      const q =
+        1 -
+        band /
+        .36;
+
+
+      u +=
+        q *
+        42;
+
+
+      v +=
+        Math.sin(
+          nx * 10 -
+          t * 1.6
+        ) *
+        q *
+        8;
+    }
+
+
+    // Swirls keep rotating at full strength until they travel off-screen.
+    for (const swirl of activeSwirls) {
+      const offsetX = x - swirl.x;
+      const offsetY = y - swirl.y;
+      const distance = Math.hypot(offsetX, offsetY);
+      if (distance >= swirl.radius) continue;
+      const edge = 1 - distance / swirl.radius;
+      const influence = Math.pow(edge, .65) * swirl.strength;
+      const spin = swirl.direction * (2.8 + 2.4 * Math.exp(-distance / (swirl.radius * .35)));
+      const gather = 1.8 * Math.max(0, 1 - (swirl.radius * .075) / Math.max(distance, 1));
+      u += (swirl.drift - offsetY * spin - offsetX * gather - u) * influence;
+      v += (offsetX * spin - offsetY * gather - v) * influence;
+    }
+    if (
+      mouse.active
+    ) {
+
+      const dx =
+        x -
+        mouse.x;
+
+
+      const dy =
+        y -
+        mouse.y;
+
+
+      const dist =
+        Math.sqrt(
+          dx * dx +
+          dy * dy
+        ) || 1;
+
+
+      const radius =
+        185 +
+        d * 115;
+
+
+      if (
+        dist <
+        radius
+      ) {
+
+        const q =
+          Math.pow(
+            1 -
+            dist /
+            radius,
+            1.45
+          );
+
+
+        const catchBoost =
+          1 +
+          Math.min(
+            mouse.speed /
+            20,
+            1.8
+          );
+
+
+        const pull =
+          185 *
+          q *
+          catchBoost;
+
+
+        const orbit =
+          78 *
+          q *
+          catchBoost;
+
+
+        const carry =
+          3.2 *
+          q;
+
+
+        u +=
+          (-dx / dist) *
+          pull;
+
+
+        v +=
+          (-dy / dist) *
+          pull;
+
+
+        u +=
+          (-dy / dist) *
+          orbit;
+
+
+        v +=
+          (dx / dist) *
+          orbit;
+
+
+        u +=
+          mouse.vx *
+          55 *
+          carry;
+
+
+        v +=
+          mouse.vy *
+          55 *
+          carry;
+
+
+        const linger =
+          q *
+          22;
+
+
+        u -=
+          (
+            u -
+            mouse.vx *
+            85
+          ) *
+          (
+            linger *
+            .01
+          );
+
+
+        v -=
+          (
+            v -
+            mouse.vy *
+            85
+          ) *
+          (
+            linger *
+            .01
+          );
+      }
+
+
+      const trailX =
+        x -
+        mouse.x;
+
+
+      if (
+        trailX < 0 &&
+        trailX > -260
+      ) {
+
+        const spread =
+          34 +
+          Math.abs(
+            trailX
+          ) *
+          .20;
+
+
+        const cross =
+          (
+            y -
+            mouse.y
+          ) /
+          spread;
+
+
+        const envelope =
+          Math.exp(
+            -cross *
+            cross
+          ) *
+          Math.exp(
+            trailX /
+            220
+          );
+
+
+        const trailPull =
+          42 *
+          envelope;
+
+
+        u +=
+          mouse.vx *
+          95 *
+          envelope;
+
+
+        v +=
+          mouse.vy *
+          95 *
+          envelope;
+
+
+        u +=
+          (-dx / dist) *
+          trailPull;
+
+
+        v +=
+          (-dy / dist) *
+          trailPull;
+      }
+    }
+
+
+    return {
+      u,
+      v
+    };
+  }
+
+
+  function drawTrace(p) {
+    // Keep the actual complete trajectory for this particle's lifetime.
+    // Respawn replaces this path, so separate particles never get connected.
+    if (!p.trace) {
+      p.trace = new Path2D();
+      p.trace.moveTo(p.px, p.py);
+    }
+    p.trace.lineTo(p.x, p.y);
+
+    let red = Math.round(55 + p.depth * 72);
+    let green = Math.round(168 + p.depth * 35);
+    let blue = 255;
+    // 15% mint green, 15% violet; retain the predominantly cyan field.
+    if (p.traceTint < .15) {
+      red = 65; green = 225; blue = 165;
+    } else if (p.traceTint < .30) {
+      red = 175; green = 120; blue = 255;
+    }
+
+    ctx.save();
+    ctx.globalCompositeOperation = "screen";
+    ctx.lineCap = "round";
+    ctx.lineJoin = "round";
+    ctx.shadowBlur = 0;
+
+    // Subpixel fibres: fine cyan/blue lines without the broad glowing stroke.
+    ctx.lineWidth = .22 + p.depth * .28;
+    ctx.strokeStyle = `rgba(${red}, ${green}, ${blue}, ${.075 + p.depth * .095})`;
+    ctx.stroke(p.trace);
+    ctx.restore();
+  }
+
+  function drawParticle(p) {
+
+    const r =
+      p.r;
+
+
+    if (
+      r < 1.0
+    ) {
+
+      const glow =
+        ctx.createRadialGradient(
+
+          p.x,
+          p.y,
+          0,
+
+          p.x,
+          p.y,
+          r * 2.8
+        );
+
+
+      glow.addColorStop(
+        0,
+
+        `rgba(
+          255,
+          255,
+          255,
+          ${
+            Math.min(
+              1,
+              p.alpha *
+              1.25
+            )
+          }
+        )`
+      );
+
+
+      glow.addColorStop(
+        .22,
+
+        `rgba(
+          210,
+          243,
+          255,
+          ${
+            p.alpha *
+            .95
+          }
+        )`
+      );
+
+
+      glow.addColorStop(
+        .52,
+
+        `rgba(
+          112,
+          196,
+          255,
+          ${
+            p.alpha *
+            .40
+          }
+        )`
+      );
+
+
+      glow.addColorStop(
+        1,
+
+        "rgba(148,176,255,0)"
+      );
+
+
+      ctx.beginPath();
+
+      ctx.fillStyle =
+        glow;
+
+
+      ctx.arc(
+        p.x,
+        p.y,
+        r * 2.6,
+        0,
+        Math.PI * 2
+      );
+
+
+      ctx.fill();
+
+      return;
+    }
+
+
+    const g =
+      ctx.createRadialGradient(
+
+        p.x -
+        r * .32,
+
+        p.y -
+        r * .37,
+
+        r * .03,
+
+        p.x,
+        p.y,
+
+        r
+      );
+
+
+    g.addColorStop(
+      0,
+
+      `rgba(
+        255,
+        255,
+        255,
+        ${
+          Math.min(
+            .98,
+            p.alpha +
+            .24
+          )
+        }
+      )`
+    );
+
+
+    g.addColorStop(
+      .16,
+
+      `rgba(
+        222,
+        243,
+        255,
+        ${
+          p.alpha *
+          .72
+        }
+      )`
+    );
+
+
+    g.addColorStop(
+      .42,
+
+      `rgba(
+        112,
+        201,
+        255,
+        ${
+          p.alpha *
+          .25
+        }
+      )`
+    );
+
+
+    g.addColorStop(
+      .70,
+
+      `rgba(
+        62,
+        146,
+        238,
+        ${
+          p.alpha *
+          .23
+        }
+      )`
+    );
+
+
+    g.addColorStop(
+      .90,
+
+      `rgba(
+        159,
+        116,
+        240,
+        ${
+          p.alpha *
+          .14
+        }
+      )`
+    );
+
+
+    g.addColorStop(
+      1,
+
+      `rgba(
+        215,
+        233,
+        255,
+        ${
+          p.alpha *
+          .40
+        }
+      )`
+    );
+
+
+    ctx.beginPath();
+
+    ctx.fillStyle =
+      g;
+
+
+    ctx.arc(
+      p.x,
+      p.y,
+      r,
+      0,
+      Math.PI * 2
+    );
+
+
+    ctx.fill();
+
+
+    if (
+      r > 1.75
+    ) {
+
+      ctx.beginPath();
+
+
+      ctx.fillStyle =
+        `rgba(
+          255,
+          255,
+          255,
+          ${
+            p.alpha *
+            .46
+          }
+        )`;
+
+
+      ctx.ellipse(
+
+        p.x -
+        r * .27,
+
+        p.y -
+        r * .30,
+
+        r * .13,
+
+        r * .07,
+
+        -.52,
+
+        0,
+
+        Math.PI * 2
+      );
+
+
+      ctx.fill();
+    }
+  }
+
+
+  function updateLayer(
+    arr,
+    t,
+    dt,
+    turbulence
+  ) {
+
+    for (
+      let i = 0;
+      i < arr.length;
+      i++
+    ) {
+
+      const p =
+        arr[i];
+
+
+      p.px =
+        p.x;
+
+
+      p.py =
+        p.y;
+
+
+      const f =
+        flowField(
+          p.x,
+          p.y,
+          t,
+          p.depth
+        );
+
+
+      const response =
+        .082 +
+        p.depth *
+        .06;
+
+
+      p.vx +=
+        (
+          f.u -
+          p.vx
+        ) *
+        response;
+
+
+      p.vy +=
+        (
+          f.v -
+          p.vy
+        ) *
+        response;
+
+
+      p.vx +=
+        Math.sin(
+          t * 2.4 +
+          p.seed
+        ) *
+        .045 *
+        turbulence;
+
+
+      p.vy +=
+        Math.cos(
+          t * 2.9 +
+          p.phase +
+          p.x * .008
+        ) *
+        .085 *
+        turbulence;
+
+
+      p.x +=
+        p.vx *
+        dt;
+
+
+      p.y +=
+        p.vy *
+        dt;
+
+
+      if (
+        p.x >
+          W + 45 ||
+
+        p.y <
+          -90 ||
+
+        p.y >
+          H + 90
+      ) {
+
+        respawn(p);
+
+        continue;
+      }
+
+
+      drawTrace(p);
+
+      drawParticle(p);
+    }
+  }
+
+
+  function animateBackground(t) {
+
+    const cyanX =
+      Math.sin(
+        t * .11
+      ) *
+      8 +
+      mouse.nx *
+      8;
+
+
+    const cyanY =
+      Math.cos(
+        t * .085
+      ) *
+      6 +
+      mouse.ny *
+      5;
+
+
+    const blueX =
+      Math.cos(
+        t * .075
+      ) *
+      10 -
+      mouse.nx *
+      6;
+
+
+    const blueY =
+      Math.sin(
+        t * .095
+      ) *
+      7 -
+      mouse.ny *
+      4;
+
+
+    const violetX =
+      Math.sin(
+        t * .065 +
+        1.7
+      ) *
+      11 -
+      mouse.nx *
+      5;
+
+
+    const violetY =
+      Math.cos(
+        t * .08 +
+        1.1
+      ) *
+      7 +
+      mouse.ny *
+      4;
+
+
+    const greenX =
+      Math.sin(
+        t * .052 +
+        .7
+      ) *
+      5;
+
+
+    const greenY =
+      Math.cos(
+        t * .048 +
+        .4
+      ) *
+      4;
+
+
+    cyan.style.transform =
+      `translate3d(
+        ${cyanX}px,
+        ${cyanY}px,
+        0
+      )`;
+
+
+    blue.style.transform =
+      `translate3d(
+        ${blueX}px,
+        ${blueY}px,
+        0
+      )`;
+
+
+    violet.style.transform =
+      `translate3d(
+        ${violetX}px,
+        ${violetY}px,
+        0
+      )`;
+
+
+    green.style.transform =
+      `translate3d(
+        ${greenX}px,
+        ${greenY}px,
+        0
+      )`;
+
+
+    auroraA.style.transform =
+      `translate3d(
+        ${
+          Math.sin(
+            t * .055
+          ) * 7
+        }px,
+        ${
+          Math.cos(
+            t * .048
+          ) * 4
+        }px,
+        0
+      )
+      rotate(
+        ${
+          8 +
+          Math.sin(
+            t * .04
+          ) *
+          .5
+        }deg
+      )`;
+
+
+    auroraB.style.transform =
+      `translate3d(
+        ${
+          Math.cos(
+            t * .05
+          ) * 6
+        }px,
+        ${
+          Math.sin(
+            t * .058
+          ) * 4
+        }px,
+        0
+      )
+      rotate(
+        ${
+          -8 +
+          Math.cos(
+            t * .045
+          ) *
+          .45
+        }deg
+      )`;
+
+
+    auroraA.style.opacity =
+      .23 +
+      Math.sin(
+        t * .07
+      ) *
+      .012;
+
+
+    auroraB.style.opacity =
+      .11 +
+      Math.cos(
+        t * .06
+      ) *
+      .008;
+  }
+
+
+  function animate(now) {
+
+    const dt =
+      Math.min(
+        .022,
+        (
+          now -
+          last
+        ) /
+        1000 ||
+        .016
+      );
+
+
+    last =
+      now;
+
+
+    const t =
+      now *
+      .001;
+
+
+    ctx.clearRect(
+      0,
+      0,
+      W,
+      H
+    );
+
+
+    mouse.x +=
+      (
+        mouse.tx -
+        mouse.x
+      ) *
+      .22;
+
+
+    mouse.y +=
+      (
+        mouse.ty -
+        mouse.y
+      ) *
+      .22;
+
+
+    mouse.vx +=
+      (
+        (
+          (
+            mouse.tx -
+            mouse.x
+          ) /
+          Math.max(
+            dt,
+            .001
+          )
+        ) /
+        1000 -
+        mouse.vx
+      ) *
+      .18;
+
+
+    mouse.vy +=
+      (
+        (
+          (
+            mouse.ty -
+            mouse.y
+          ) /
+          Math.max(
+            dt,
+            .001
+          )
+        ) /
+        1000 -
+        mouse.vy
+      ) *
+      .18;
+
+
+    mouse.speed *=
+      .88;
+
+
+    prepareSwirls(t);
+
+    animateBackground(
+      t
+    );
+
+
+    updateLayer(
+      far,
+      t,
+      dt,
+      .85
+    );
+
+
+    updateLayer(
+      mid,
+      t,
+      dt,
+      1.05
+    );
+
+
+    updateLayer(
+      near,
+      t,
+      dt,
+      1.28
+    );
+
+
+    requestAnimationFrame(
+      animate
+    );
+  }
+
+
+  hero.addEventListener(
+    "pointermove",
+    e => {
+
+      const rect =
+        hero.getBoundingClientRect();
+
+
+      const x =
+        e.clientX -
+        rect.left;
+
+
+      const y =
+        e.clientY -
+        rect.top;
+
+
+      const dx =
+        x -
+        mouse.lastX;
+
+
+      const dy =
+        y -
+        mouse.lastY;
+
+
+      mouse.speed =
+        Math.min(
+          85,
+          Math.sqrt(
+            dx * dx +
+            dy * dy
+          )
+        );
+
+
+      mouse.lastX =
+        x;
+
+
+      mouse.lastY =
+        y;
+
+
+      mouse.tx =
+        x;
+
+
+      mouse.ty =
+        y;
+
+
+      mouse.active =
+        true;
+
+
+      mouse.nx =
+        x /
+        rect.width -
+        .5;
+
+
+      mouse.ny =
+        y /
+        rect.height -
+        .5;
+
+
+      hero.classList.add(
+        "is-active"
+      );
+
+
+      hero.style.setProperty(
+        "--mx",
+        `${x}px`
+      );
+
+
+      hero.style.setProperty(
+        "--my",
+        `${y}px`
+      );
+    }
+  );
+
+
+  hero.addEventListener(
+    "pointerleave",
+    () => {
+
+      mouse.active =
+        false;
+
+
+      mouse.speed =
+        0;
+
+
+      mouse.nx =
+        0;
+
+
+      mouse.ny =
+        0;
+
+
+      mouse.vx =
+        0;
+
+
+      mouse.vy =
+        0;
+
+
+      hero.classList.remove(
+        "is-active"
+      );
+    }
+  );
+
+
+  window.addEventListener(
+    "resize",
+    resize
+  );
+
+
+  resize();
+
+
+  requestAnimationFrame(
+    animate
+  );
+
+})();
+</script>
+
+<script>
+(() => {
+  const parentDocument = window.parent.document;
+  const headline = parentDocument.querySelector('.hero-headline-text');
+  const supportingText = parentDocument.querySelector('.hero-paragraph');
+  const heroDivider = parentDocument.querySelector('.hero-top .divider');
+
+  if (headline) {
+    headline.setAttribute('aria-label', 'Intelligence from the air around us.');
+    headline.innerHTML = '<h1 class="display-7xl">Intelligence from the air around us.</h1>';
+  }
+
+  if (supportingText) {
+    supportingText.remove();
+  }
+
+  if (heroDivider) {
+    heroDivider.style.visibility = 'hidden';
+  }
+})();
+</script>
+
+
