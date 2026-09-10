@@ -473,7 +473,7 @@ figcaption { text-align: left; margin-top: 5px; margin-bottom: 3rem; }
 ._12-column-grid.nav-menu { row-gap: 3em; }
 ._12-column-grid.middle { place-items: center stretch; }
 .hero-image-wrap { z-index: -1; width: 100%; height: 100%; position: absolute; inset: 0%; overflow: hidden; }
-.hero-image-overlay { background-color: rgba(0, 0, 0, 0.55); width: 100%; height: 100%; position: absolute; inset: 0%; }
+.hero-image-overlay { background-color: rgba(0, 0, 0, 0.48); width: 100%; height: 100%; position: absolute; inset: 0%; }
 .button-wrap { justify-content: flex-start; align-items: flex-start; display: flex; }
 .hero-video { object-fit: cover; width: 100%; height: 100%; }
 .hero-top { width: 100%; }
