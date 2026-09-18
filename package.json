@@ -4,7 +4,10 @@
   "description": "Static website prepared for GitHub Pages.",
   "main": "site.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "content:generate": "python scripts/generate-tina-content.py",
+    "cms:audit": "tinacms audit --noTelemetry",
+    "cms:dev": "tinacms dev -c \"npx http-server . -p 3001\"",
+    "cms:build": "tinacms build"
   },
   "repository": {
     "type": "git",

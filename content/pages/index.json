@@ -1,0 +1,607 @@
+{
+  "name": "OutbreakSafe | Airborne Biological Detection",
+  "seo": {
+    "title": "OutbreakSafe | Airborne Biological Detection",
+    "description": "OutbreakSafe develops intelligent, real-time airborne biological detection technology for safer healthcare, aged care, agriculture and diagnostic environments."
+  },
+  "content": [
+    {
+      "label": "main",
+      "cmsId": "index-014",
+      "html": "main<br>"
+    },
+    {
+      "label": "Home",
+      "cmsId": "index-018",
+      "html": "Home"
+    },
+    {
+      "label": "Platform",
+      "cmsId": "index-021",
+      "html": "Platform"
+    },
+    {
+      "label": "About",
+      "cmsId": "index-024",
+      "html": "About"
+    },
+    {
+      "label": "Careers",
+      "cmsId": "index-027",
+      "html": "Careers"
+    },
+    {
+      "label": "Services",
+      "cmsId": "index-030",
+      "html": "Services"
+    },
+    {
+      "label": "Newsroom",
+      "cmsId": "index-033",
+      "html": "Newsroom"
+    },
+    {
+      "label": "Contact",
+      "cmsId": "index-036",
+      "html": "Contact<br>"
+    },
+    {
+      "label": "Send Us A Message",
+      "cmsId": "index-041",
+      "html": "Send Us A Message"
+    },
+    {
+      "label": "Request a Quote",
+      "cmsId": "index-046",
+      "html": "Request a Quote"
+    },
+    {
+      "label": "Quick Contact",
+      "cmsId": "index-049",
+      "html": "Quick Contact"
+    },
+    {
+      "label": "Address",
+      "cmsId": "index-064",
+      "html": "Address"
+    },
+    {
+      "label": "123 Main St, San Francisco, CA 94105",
+      "cmsId": "index-065",
+      "html": "123 Main St, <br>San Francisco, CA 94105"
+    },
+    {
+      "label": "CONTACT US",
+      "cmsId": "index-069",
+      "html": "CONTACT&nbsp;US<br>"
+    },
+    {
+      "label": "Learn about our tech",
+      "cmsId": "index-094",
+      "html": "Learn about our tech"
+    },
+    {
+      "label": "What We ENABLE",
+      "cmsId": "index-105",
+      "html": "What We ENABLE"
+    },
+    {
+      "label": "We help people understand indoor environments more clearly with tec…",
+      "cmsId": "index-107",
+      "html": "We help people understand indoor environments more clearly with technology built into everyday devices that interprets air signals responsibly and privately."
+    },
+    {
+      "label": "Device Integration",
+      "cmsId": "index-112",
+      "html": "Device Integration<br>"
+    },
+    {
+      "label": "OutbreakSafe technology sits inside select devices, helping them re…",
+      "cmsId": "index-113",
+      "html": "OutbreakSafe technology sits inside select devices, helping them recognise airborne biological signals in real time."
+    },
+    {
+      "label": "Cloud Interpretation",
+      "cmsId": "index-117",
+      "html": "Cloud Interpretation<br>"
+    },
+    {
+      "label": "Connected devices can access secure cloud tools that analyse signal…",
+      "cmsId": "index-118",
+      "html": "Connected devices can access secure cloud tools that analyse signal patterns and provide clear, easy‑to‑read environmental information."
+    },
+    {
+      "label": "Advanced Materials Science",
+      "cmsId": "index-122",
+      "html": "Advanced Materials Science<br>"
+    },
+    {
+      "label": "Our platform is built on molecular technology designed to identify…",
+      "cmsId": "index-123",
+      "html": "Our platform is built on molecular technology designed to identify the presence of specific biological structures in the air."
+    },
+    {
+      "label": "Environmental Detection",
+      "cmsId": "index-131",
+      "html": "Environmental Detection<br>"
+    },
+    {
+      "label": "Technology assisting devices to identify airborne biological signal…",
+      "cmsId": "index-132",
+      "html": "Technology assisting devices to identify airborne biological signals forming the foundation of real‑time pathogen awareness."
+    },
+    {
+      "label": "Data Intelligence",
+      "cmsId": "index-136",
+      "html": "Data Intelligence"
+    },
+    {
+      "label": "Captured signals are interpreted through secure cloud frameworks, t…",
+      "cmsId": "index-137",
+      "html": "Captured signals are interpreted through secure cloud frameworks, transforming raw detection into actionable environmental insights for partners multi sector applications."
+    },
+    {
+      "label": "Applied Integration",
+      "cmsId": "index-141",
+      "html": "Applied Integration"
+    },
+    {
+      "label": "Collaboration with manufacturers to embed detection capability into…",
+      "cmsId": "index-142",
+      "html": "Collaboration with manufacturers to embed detection capability into everyday devices — expanding access to intelligent environmental monitoring worldwide."
+    },
+    {
+      "label": "Our Technology",
+      "cmsId": "index-151",
+      "html": "Our Technology"
+    },
+    {
+      "label": "Our Ai- Driven",
+      "cmsId": "index-154",
+      "html": "Our Ai- Driven"
+    },
+    {
+      "label": "logistics fuels",
+      "cmsId": "index-157",
+      "html": "logistics fuels"
+    },
+    {
+      "label": "agile global supply chains.",
+      "cmsId": "index-159",
+      "html": "agile global supply chains."
+    },
+    {
+      "label": "Explore Platform",
+      "cmsId": "index-165",
+      "html": "Explore Platform"
+    },
+    {
+      "label": "OUR MISSION",
+      "cmsId": "index-173",
+      "html": "OUR&nbsp;MISSION"
+    },
+    {
+      "label": "We exist to make airborne biological detection accessible, intellig…",
+      "cmsId": "index-176",
+      "html": "We exist to make airborne biological detection accessible, intelligent, and seamlessly integrated into everyday life."
+    },
+    {
+      "label": "The Team",
+      "cmsId": "index-185",
+      "html": "The Team"
+    },
+    {
+      "label": "Camilo Rodriguez",
+      "cmsId": "index-191",
+      "html": "Camilo Rodriguez"
+    },
+    {
+      "label": "Co - Founder Chief Executive Officer",
+      "cmsId": "index-192",
+      "html": "Co - Founder<br>Chief Executive Officer"
+    },
+    {
+      "label": "Ryan De Vincentis",
+      "cmsId": "index-196",
+      "html": "Ryan De Vincentis"
+    },
+    {
+      "label": "Co - Founder",
+      "cmsId": "index-197",
+      "html": "Co - Founder<br>"
+    },
+    {
+      "label": "Tim Blanche",
+      "cmsId": "index-201",
+      "html": "Tim Blanche"
+    },
+    {
+      "label": "Advisor",
+      "cmsId": "index-202",
+      "html": "Advisor"
+    },
+    {
+      "label": "Wesley Lawrence",
+      "cmsId": "index-206",
+      "html": "Wesley Lawrence"
+    },
+    {
+      "label": "Advisor",
+      "cmsId": "index-207",
+      "html": "Advisor"
+    },
+    {
+      "label": "Prof. Sharath Sriram",
+      "cmsId": "index-211",
+      "html": "Prof. Sharath Sriram"
+    },
+    {
+      "label": "Technology Advisor",
+      "cmsId": "index-212",
+      "html": "Technology Advisor"
+    },
+    {
+      "label": "Dr Lee Krahe",
+      "cmsId": "index-216",
+      "html": "Dr Lee Krahe"
+    },
+    {
+      "label": "Advisor",
+      "cmsId": "index-217",
+      "html": "Advisor"
+    },
+    {
+      "label": "Ryan Foote",
+      "cmsId": "index-221",
+      "html": "Ryan&nbsp;Foote"
+    },
+    {
+      "label": "Advisor",
+      "cmsId": "index-222",
+      "html": "Advisor"
+    },
+    {
+      "label": "Prof. Catherine Bennett",
+      "cmsId": "index-226",
+      "html": "Prof. Catherine Bennett"
+    },
+    {
+      "label": "Scientific Advisor",
+      "cmsId": "index-227",
+      "html": "Scientific Advisor"
+    },
+    {
+      "label": "Prof. Gjoko Muratovski",
+      "cmsId": "index-231",
+      "html": "Prof. Gjoko Muratovski"
+    },
+    {
+      "label": "Strategy & Innovation Advisor",
+      "cmsId": "index-232",
+      "html": "Strategy &amp; Innovation Advisor<br>"
+    },
+    {
+      "label": "Let's Connect",
+      "cmsId": "index-237",
+      "html": "Let's Connect"
+    },
+    {
+      "label": "Moving Your Business Forward",
+      "cmsId": "index-240",
+      "html": "Moving Your Business Forward"
+    },
+    {
+      "label": "Contact Us",
+      "cmsId": "index-246",
+      "html": "Contact Us"
+    },
+    {
+      "label": "Contact",
+      "cmsId": "index-257",
+      "html": "Contact"
+    },
+    {
+      "label": "Contact Us",
+      "cmsId": "index-259",
+      "html": "Contact Us"
+    },
+    {
+      "label": "Main",
+      "cmsId": "index-261",
+      "html": "Main"
+    },
+    {
+      "label": "Home",
+      "cmsId": "index-264",
+      "html": "Home<br>"
+    },
+    {
+      "label": "About",
+      "cmsId": "index-267",
+      "html": "About"
+    },
+    {
+      "label": "Services",
+      "cmsId": "index-270",
+      "html": "Services"
+    },
+    {
+      "label": "platform",
+      "cmsId": "index-273",
+      "html": "platform"
+    },
+    {
+      "label": "Careers",
+      "cmsId": "index-276",
+      "html": "Careers"
+    },
+    {
+      "label": "Newsroom",
+      "cmsId": "index-279",
+      "html": "Newsroom"
+    },
+    {
+      "label": "Support",
+      "cmsId": "index-282",
+      "html": "Support"
+    },
+    {
+      "label": "404",
+      "cmsId": "index-285",
+      "html": "404"
+    },
+    {
+      "label": "Privacy",
+      "cmsId": "index-288",
+      "html": "Privacy"
+    },
+    {
+      "label": "Styleguide",
+      "cmsId": "index-291",
+      "html": "Styleguide<br>"
+    },
+    {
+      "label": "License",
+      "cmsId": "index-294",
+      "html": "License"
+    },
+    {
+      "label": "info@outbreaksafe.com",
+      "cmsId": "index-297",
+      "html": "info@outbreaksafe.com"
+    },
+    {
+      "label": "Quick Contact",
+      "cmsId": "index-298",
+      "html": "Quick Contact"
+    },
+    {
+      "label": "©2026. All rights reserved",
+      "cmsId": "index-304",
+      "html": "©2026. All rights reserved"
+    },
+    {
+      "label": "A clearer understanding of your environment.",
+      "cmsId": "index-heading-001",
+      "mode": "splitWords",
+      "html": "A clearer understanding of your environment."
+    }
+  ],
+  "links": [
+    {
+      "label": "Link 1",
+      "cmsId": "index-007",
+      "href": "index.html"
+    },
+    {
+      "label": "Home",
+      "cmsId": "index-018",
+      "href": "index.html"
+    },
+    {
+      "label": "Platform",
+      "cmsId": "index-021",
+      "href": "platform.html"
+    },
+    {
+      "label": "About",
+      "cmsId": "index-024",
+      "href": "about.html"
+    },
+    {
+      "label": "Careers",
+      "cmsId": "index-027",
+      "href": "#"
+    },
+    {
+      "label": "Services",
+      "cmsId": "index-030",
+      "href": "services.html"
+    },
+    {
+      "label": "Newsroom",
+      "cmsId": "index-033",
+      "href": "#"
+    },
+    {
+      "label": "Send Us A Message",
+      "cmsId": "index-039",
+      "href": "mailto:info@transit.com"
+    },
+    {
+      "label": "Request a Quote",
+      "cmsId": "index-044",
+      "href": "contact.html"
+    },
+    {
+      "label": "Link 10",
+      "cmsId": "index-052",
+      "href": "https://instagram.com"
+    },
+    {
+      "label": "Link 11",
+      "cmsId": "index-055",
+      "href": "https://facebook.com"
+    },
+    {
+      "label": "Link 12",
+      "cmsId": "index-058",
+      "href": "https://x.com"
+    },
+    {
+      "label": "Link 13",
+      "cmsId": "index-061",
+      "href": "https://linkedin.com"
+    },
+    {
+      "label": "CONTACT US",
+      "cmsId": "index-068",
+      "href": "contact.html"
+    },
+    {
+      "label": "Explore Platform",
+      "cmsId": "index-163",
+      "href": "platform.html"
+    },
+    {
+      "label": "Contact Us",
+      "cmsId": "index-244",
+      "href": "contact.html"
+    },
+    {
+      "label": "Link 17",
+      "cmsId": "index-255",
+      "href": "index.html"
+    },
+    {
+      "label": "Home",
+      "cmsId": "index-263",
+      "href": "index.html"
+    },
+    {
+      "label": "About",
+      "cmsId": "index-266",
+      "href": "about.html"
+    },
+    {
+      "label": "Services",
+      "cmsId": "index-269",
+      "href": "services.html"
+    },
+    {
+      "label": "platform",
+      "cmsId": "index-272",
+      "href": "platform.html"
+    },
+    {
+      "label": "Careers",
+      "cmsId": "index-275",
+      "href": "#"
+    },
+    {
+      "label": "Newsroom",
+      "cmsId": "index-278",
+      "href": "#"
+    },
+    {
+      "label": "404",
+      "cmsId": "index-284",
+      "href": "#"
+    },
+    {
+      "label": "Privacy",
+      "cmsId": "index-287",
+      "href": "privacy-policy.html"
+    },
+    {
+      "label": "Styleguide",
+      "cmsId": "index-290",
+      "href": "/info/styleguide"
+    },
+    {
+      "label": "License",
+      "cmsId": "index-293",
+      "href": "/info/license"
+    }
+  ],
+  "images": [
+    {
+      "label": "Image 1",
+      "cmsId": "index-133",
+      "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a09aea557f9c63fb50ff3ae_pexels-matin-18604894.jpg",
+      "alt": ""
+    },
+    {
+      "label": "Image 2",
+      "cmsId": "index-156",
+      "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2b93_kanhaiya-sharma-EiAqej-cGks-unsplash%20(1).webp",
+      "alt": ""
+    },
+    {
+      "label": "Image 3",
+      "cmsId": "index-161",
+      "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2b69_bernd-dittrich-eCc7FjMoR74-unsplash%20(1).avif",
+      "alt": ""
+    },
+    {
+      "label": "Image 4",
+      "cmsId": "index-189",
+      "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a09b2a6b996c99aff0989b8_8.jpg",
+      "alt": ""
+    },
+    {
+      "label": "Image 5",
+      "cmsId": "index-194",
+      "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a09b2a6db043deec93a7e9d_7.jpg",
+      "alt": ""
+    },
+    {
+      "label": "Image 6",
+      "cmsId": "index-199",
+      "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a09b2a6916c426e6c676148_4.jpg",
+      "alt": ""
+    },
+    {
+      "label": "Image 7",
+      "cmsId": "index-204",
+      "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a09b2a64d585f3f9430392a_5.jpg",
+      "alt": ""
+    },
+    {
+      "label": "Image 8",
+      "cmsId": "index-209",
+      "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a09b2a65553c62e406bb4fc_6.jpg",
+      "alt": ""
+    },
+    {
+      "label": "Image 9",
+      "cmsId": "index-214",
+      "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a09ba97f7926b95002997cd_9.jpg",
+      "alt": ""
+    },
+    {
+      "label": "Image 10",
+      "cmsId": "index-219",
+      "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a09b2ae0689a5095e7fb3ef_10.jpg",
+      "alt": ""
+    },
+    {
+      "label": "Image 11",
+      "cmsId": "index-224",
+      "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a09b2a648a20b4c5c7678d1_1.jpg",
+      "alt": ""
+    },
+    {
+      "label": "Image 12",
+      "cmsId": "index-229",
+      "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a09b2a6c92f0cc1de45a6dd_2.jpg",
+      "alt": ""
+    },
+    {
+      "label": "Image 13",
+      "cmsId": "index-243",
+      "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2b7a_tim-schmidbauer-2pBo7hWjzIc-unsplash%20(1).avif",
+      "alt": ""
+    }
+  ]
+}

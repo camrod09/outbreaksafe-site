@@ -35,22 +35,70 @@ export default defineConfig({
   schema: {
     collections: [
       {
-        name: "post",
-        label: "Posts",
-        path: "content/posts",
+        name: "page",
+        label: "Website Pages",
+        path: "content/pages",
+        format: "json",
+        ui: {
+          allowedActions: {
+            create: false,
+            delete: false,
+          },
+        },
         fields: [
           {
             type: "string",
-            name: "title",
-            label: "Title",
+            name: "name",
+            label: "Page",
             isTitle: true,
             required: true,
           },
           {
-            type: "rich-text",
-            name: "body",
-            label: "Body",
-            isBody: true,
+            type: "object",
+            name: "seo",
+            label: "Search and sharing",
+            fields: [
+              { type: "string", name: "title", label: "Browser and search title" },
+              { type: "string", name: "description", label: "Search description", ui: { component: "textarea" } },
+            ],
+          },
+          {
+            type: "object",
+            name: "content",
+            label: "Page text",
+            list: true,
+            ui: { itemProps: (item) => ({ label: item?.label || "Text" }) },
+            fields: [
+              { type: "string", name: "label", label: "Field name", ui: { component: "hidden" } },
+              { type: "string", name: "cmsId", label: "Element ID", ui: { component: "hidden" } },
+              { type: "string", name: "mode", label: "Rendering mode", ui: { component: "hidden" } },
+              { type: "string", name: "html", label: "Text", ui: { component: "textarea" } },
+            ],
+          },
+          {
+            type: "object",
+            name: "links",
+            label: "Buttons and links",
+            list: true,
+            ui: { itemProps: (item) => ({ label: item?.label || "Link" }) },
+            fields: [
+              { type: "string", name: "label", label: "Field name", ui: { component: "hidden" } },
+              { type: "string", name: "cmsId", label: "Element ID", ui: { component: "hidden" } },
+              { type: "string", name: "href", label: "Destination" },
+            ],
+          },
+          {
+            type: "object",
+            name: "images",
+            label: "Images",
+            list: true,
+            ui: { itemProps: (item) => ({ label: item?.label || "Image" }) },
+            fields: [
+              { type: "string", name: "label", label: "Field name", ui: { component: "hidden" } },
+              { type: "string", name: "cmsId", label: "Element ID", ui: { component: "hidden" } },
+              { type: "image", name: "src", label: "Image" },
+              { type: "string", name: "alt", label: "Alternative text" },
+            ],
           },
         ],
       },
