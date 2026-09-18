@@ -1,0 +1,26 @@
+{
+  "name": "outbreaksafe-site",
+  "version": "1.0.0",
+  "description": "Static website prepared for GitHub Pages.",
+  "main": "site.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camrod09/outbreaksafe-site.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/camrod09/outbreaksafe-site/issues"
+  },
+  "homepage": "https://github.com/camrod09/outbreaksafe-site#readme",
+  "dependencies": {
+    "tinacms": "^3.14.0"
+  },
+  "devDependencies": {
+    "@tinacms/cli": "^3.0.0",
+    "@types/node": "^26.6.1"
+  }
+}
