@@ -4,7 +4,7 @@
 export function getServerSideProps() {
   return {
     redirect: {
-      destination: "/admin/index.html#/~/tina-preview/index",
+      destination: "/admin/index.html#/~/tina-preview/home",
       permanent: false,
     },
   };

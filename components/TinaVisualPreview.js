@@ -1,19 +1,7 @@
-import fs from "node:fs/promises";
-import path from "node:path";
 import Head from "next/head";
 import Script from "next/script";
-import { tinaField, useTina } from "tinacms/dist/react";
 import { useEffect, useRef } from "react";
-import client from "../../tina/__generated__/client";
-
-const PAGE_FILES = {
-  index: "index.html",
-  about: "about.html",
-  platform: "platform.html",
-  services: "services.html",
-  contact: "contact.html",
-  "privacy-policy": "privacy-policy.html",
-};
+import { tinaField, useTina } from "tinacms/dist/react";
 
 const PAGE_URLS = {
   "index.html": "/",
@@ -30,39 +18,6 @@ function toPublicUrl(url) {
   if (!match) return url;
   const [, pathname, suffix = ""] = match;
   return PAGE_URLS[pathname] ? `${PAGE_URLS[pathname]}${suffix}` : url;
-}
-
-function adaptMarkup(markup) {
-  return markup.replace(
-    /\b(href|src)=(['"])([^'"]+)\2/gi,
-    (whole, attribute, quote, url) => `${attribute}=${quote}${toPublicUrl(url)}${quote}`,
-  );
-}
-
-function extract(source, tag) {
-  const match = source.match(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)</${tag}>`, "i"));
-  return match ? match[1] : "";
-}
-
-function extractBody(source) {
-  return adaptMarkup(extract(source, "body")).replace(
-    /<script\b[\s\S]*?<\/script>/gi,
-    "",
-  );
-}
-
-function extractStyles(source) {
-  return [...source.matchAll(/<style(?:\s[^>]*)?>([\s\S]*?)<\/style>/gi)].map(
-    (match) => match[1],
-  );
-}
-
-function escapeAttribute(value) {
-  return String(value)
-    .replace(/&/g, "&amp;")
-    .replace(/"/g, "&quot;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;");
 }
 
 function addTinaFields(markup, page) {
@@ -93,6 +48,14 @@ function addTinaFields(markup, page) {
       return suffix.length ? `<${attributes} ${suffix.join(" ")}>` : whole;
     },
   );
+}
+
+function escapeAttribute(value) {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/"/g, "&quot;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
 }
 
 function safeTextHtml(value) {
@@ -127,29 +90,7 @@ function applyTinaContent(root, page) {
   });
 }
 
-export async function getServerSideProps({ params }) {
-  const slug = params?.slug;
-  const filename = PAGE_FILES[slug];
-  if (!filename) return { notFound: true };
-
-  const [source, tinaResponse] = await Promise.all([
-    fs.readFile(path.join(process.cwd(), "legacy-pages", filename), "utf8"),
-    client.queries.page({ relativePath: `${slug}.json` }),
-  ]);
-
-  return {
-    props: {
-      source,
-      styles: extractStyles(source),
-      body: extractBody(source),
-      data: tinaResponse.data,
-      query: tinaResponse.query,
-      variables: tinaResponse.variables,
-    },
-  };
-}
-
-export default function TinaVisualPreview({ source, styles, body, data, query, variables }) {
+export default function TinaVisualPreview({ styles, body, data, query, variables }) {
   const { data: tinaData } = useTina({
     query,
     variables,
