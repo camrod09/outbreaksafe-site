@@ -4,7 +4,7 @@
   "description": "OutbreakSafe marketing site with TinaCMS-managed content.",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "tinacms build && next build",
     "start": "next start",
     "content:generate": "python3 scripts/generate-tina-content.py",
     "cms:audit": "tinacms audit --noTelemetry",

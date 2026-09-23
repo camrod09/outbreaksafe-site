@@ -1,17 +1,13 @@
-import fs from "node:fs/promises";
-import path from "node:path";
-
-// Tina emits its existing static admin bundle to public/admin. Serve its index
-// at the directory URL because Next's public-file handling only matches files.
-export async function getServerSideProps({ res }) {
-  const admin = await fs.readFile(
-    path.join(process.cwd(), "public", "admin", "index.html"),
-    "utf8",
-  );
-
-  res.setHeader("Content-Type", "text/html; charset=utf-8");
-  res.end(admin);
-  return { props: {} };
+// Tina emits a static admin bundle to public/admin during the production
+// build. Redirect the directory URL to that generated public file instead of
+// reading it from the serverless filesystem at request time.
+export function getServerSideProps() {
+  return {
+    redirect: {
+      destination: "/admin/index.html",
+      permanent: false,
+    },
+  };
 }
 
 export default function TinaAdmin() {
