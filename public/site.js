@@ -1,4 +1,12 @@
 (() => {
+  const root = document.documentElement;
+  const reduceMotion = typeof window.matchMedia === 'function'
+    && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // The HTML was exported after Webflow/GSAP had already applied many inline
+  // styles.  Own the motion state here instead of relying on those snapshots.
+  root.classList.add('motion-ready');
+
   const menuButton = document.querySelector('.button-menu');
   const menu = document.querySelector('.nav-content');
 
@@ -35,14 +43,30 @@
     });
   });
 
-  const reveal = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translate3d(0,0,0)';
-      }
-    });
-  }, { threshold: 0.08 });
+  const revealTargets = [
+    ...document.querySelectorAll('.animation-up-0-1'),
+    ...document.querySelectorAll('.gsap_split_word'),
+  ];
+  document.querySelectorAll('.gsap_split_word').forEach((word, index) => {
+    word.style.setProperty('--motion-index', String(index % 8));
+  });
 
-  document.querySelectorAll('[class*="animation-up"]').forEach((element) => reveal.observe(element));
+  const show = (element) => {
+    element.classList.add('motion-visible');
+  };
+
+  if (reduceMotion || !('IntersectionObserver' in window)) {
+    revealTargets.forEach(show);
+  } else {
+    const reveal = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          show(entry.target);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -6% 0px' });
+
+    revealTargets.forEach((element) => reveal.observe(element));
+  }
 })();

@@ -725,6 +725,62 @@ figcaption { text-align: left; margin-top: 5px; margin-bottom: 3rem; }
 .position-title { gap: 0.75em; flex-flow: column; display: flex; }
 .arrow-icon { width: 1.2rem; height: 1.2rem; }
 .arrow-icon.hover { position: absolute; top: 0px; left: -100%; }
+
+/*
+ * Motion recovered from the pre-migration export.  The old HTML contains
+ * captured Webflow/GSAP inline states (20px upward reveals, split words at
+ * translateY(100%), and off-canvas button underlines).  These rules provide
+ * the same restrained motion without shipping a Webflow runtime.
+ */
+.motion-ready .animation-up-0-1 {
+  opacity: 0 !important;
+  transform: translate3d(0, 20px, 0) !important;
+  transition: opacity 600ms cubic-bezier(.22, 1, .36, 1), transform 600ms cubic-bezier(.22, 1, .36, 1);
+  will-change: opacity, transform;
+}
+.motion-ready .animation-up-0-1.motion-visible {
+  opacity: 1 !important;
+  transform: translate3d(0, 0, 0) !important;
+}
+.motion-ready .gsap_split_word {
+  opacity: 0 !important;
+  transform: translate3d(0, 100%, 0) !important;
+  transition: opacity 500ms cubic-bezier(.22, 1, .36, 1), transform 500ms cubic-bezier(.22, 1, .36, 1);
+  transition-delay: calc(var(--motion-index, 0) * 45ms);
+  will-change: opacity, transform;
+}
+.motion-ready .gsap_split_word.motion-visible {
+  opacity: 1 !important;
+  transform: translate3d(0, 0, 0) !important;
+}
+.button-background,
+.footer-underline-button,
+.button-hover-line,
+.nav-content {
+  transition: transform 350ms cubic-bezier(.22, 1, .36, 1);
+}
+.nav-content { transition-duration: 450ms; }
+.button-wrap:hover .button-background,
+.button-wrap:focus-within .button-background { transform: translate3d(0, 0, 0) !important; }
+.footer-button:hover .footer-underline-button,
+.footer-button:focus-visible .footer-underline-button,
+.underline-link:hover .button-hover-line,
+.underline-link:focus-visible .button-hover-line { transform: translate3d(0, 0, 0) !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  .motion-ready .animation-up-0-1,
+  .motion-ready .animation-up-0-1.motion-visible,
+  .motion-ready .gsap_split_word,
+  .motion-ready .gsap_split_word.motion-visible {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .button-background,
+  .footer-underline-button,
+  .button-hover-line,
+  .nav-content { transition: none !important; }
+}
 ._60-svh { justify-content: center; align-items: center; min-height: 60svh; display: flex; position: relative; overflow: hidden; }
 .link, .link-2, .link-3, .link-4 { text-decoration: underline; }
 .instructions-image { width: 100%; }
