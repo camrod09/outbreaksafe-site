@@ -17,7 +17,7 @@ export default defineConfig({
 
   build: {
     outputFolder: "admin",
-    publicFolder: ".",
+    publicFolder: "public",
   },
   // Uncomment to allow cross-origin requests from non-localhost origins
   // during local development (e.g. GitHub Codespaces, Gitpod, Docker).
@@ -28,7 +28,7 @@ export default defineConfig({
   media: {
     tina: {
       mediaRoot: "",
-      publicFolder: ".",
+      publicFolder: "public",
     },
   },
   // See docs on content modeling for more info on how to setup new content models: https://tina.io/docs/r/content-modelling-collections/
@@ -37,7 +37,7 @@ export default defineConfig({
       {
         name: "page",
         label: "Website Pages",
-        path: "content/pages",
+        path: "public/content/pages",
         format: "json",
         ui: {
           allowedActions: {

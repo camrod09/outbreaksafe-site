@@ -1,0 +1,357 @@
+{
+  "name": "Privacy Policy",
+  "seo": {
+    "title": "Privacy Policy",
+    "description": ""
+  },
+  "content": [
+    {
+      "label": "main",
+      "cmsId": "privacy-policy-011",
+      "html": "main<br>"
+    },
+    {
+      "label": "Home",
+      "cmsId": "privacy-policy-015",
+      "html": "Home"
+    },
+    {
+      "label": "Platform",
+      "cmsId": "privacy-policy-018",
+      "html": "Platform"
+    },
+    {
+      "label": "About",
+      "cmsId": "privacy-policy-021",
+      "html": "About"
+    },
+    {
+      "label": "Careers",
+      "cmsId": "privacy-policy-024",
+      "html": "Careers"
+    },
+    {
+      "label": "Services",
+      "cmsId": "privacy-policy-027",
+      "html": "Services"
+    },
+    {
+      "label": "Newsroom",
+      "cmsId": "privacy-policy-030",
+      "html": "Newsroom"
+    },
+    {
+      "label": "Contact",
+      "cmsId": "privacy-policy-033",
+      "html": "Contact<br>"
+    },
+    {
+      "label": "Send Us A Message",
+      "cmsId": "privacy-policy-038",
+      "html": "Send Us A Message"
+    },
+    {
+      "label": "Request a Quote",
+      "cmsId": "privacy-policy-043",
+      "html": "Request a Quote"
+    },
+    {
+      "label": "Quick Contact",
+      "cmsId": "privacy-policy-046",
+      "html": "Quick Contact"
+    },
+    {
+      "label": "Address",
+      "cmsId": "privacy-policy-061",
+      "html": "Address"
+    },
+    {
+      "label": "123 Main St, San Francisco, CA 94105",
+      "cmsId": "privacy-policy-062",
+      "html": "123 Main St, <br>San Francisco, CA 94105"
+    },
+    {
+      "label": "CONTACT US",
+      "cmsId": "privacy-policy-066",
+      "html": "CONTACT&nbsp;US<br>"
+    },
+    {
+      "label": "Privacy Policy",
+      "cmsId": "privacy-policy-073",
+      "html": "Privacy Policy"
+    },
+    {
+      "label": "PRIVACY POLICY",
+      "cmsId": "privacy-policy-077",
+      "html": "PRIVACY POLICY"
+    },
+    {
+      "label": "LAST UPDATED",
+      "cmsId": "privacy-policy-078",
+      "html": "LAST UPDATED"
+    },
+    {
+      "label": "We also collect technical data, including IP address, browser type,…",
+      "cmsId": "privacy-policy-079",
+      "html": "We also collect technical data, including IP address, browser type, device type, and operating system. Additionally, we collect usage data, which provides information about your use of our website and services."
+    },
+    {
+      "label": "We collect this information directly from you through forms, survey…",
+      "cmsId": "privacy-policy-080",
+      "html": "We collect this information directly from you through forms, surveys, and other interactions. We also collect information automatically through cookies, analytics tools, and other technologies."
+    },
+    {
+      "label": "We use the collected information to provide and improve our service…",
+      "cmsId": "privacy-policy-081",
+      "html": "We use the collected information to provide and improve our services, respond to your inquiries and requests, and send you marketing communications if you've opted-in."
+    },
+    {
+      "label": "We also use this information to comply with laws and regulations.We…",
+      "cmsId": "privacy-policy-082",
+      "html": "We also use this information to comply with laws and regulations.We disclose your information to third-party service providers for services like payment processing and data analysis."
+    },
+    {
+      "label": "We may also disclose your information to partners for joint marketi…",
+      "cmsId": "privacy-policy-083",
+      "html": "We may also disclose your information to partners for joint marketing initiatives and other collaborations. Additionally, we may disclose your information to authorities to comply with laws and regulations."
+    },
+    {
+      "label": "We implement reasonable security measures to protect your personal…",
+      "cmsId": "privacy-policy-084",
+      "html": "We implement reasonable security measures to protect your personal data. However, no security measures are foolproof, and we can't guarantee the security of your data."
+    },
+    {
+      "label": "You have the right to request access to your personal data, request…",
+      "cmsId": "privacy-policy-085",
+      "html": "You have the right to request access to your personal data, request corrections to your personal data, request deletion of your personal data, and opt-out of marketing communications."
+    },
+    {
+      "label": "We reserve the right to modify this Privacy Policy at any time. You…",
+      "cmsId": "privacy-policy-086",
+      "html": "We reserve the right to modify this Privacy Policy at any time. Your continued use of our website and services after changes are made constitutes your acceptance of the revised policy."
+    },
+    {
+      "label": "If you have any questions or concerns about this Privacy Policy, pl…",
+      "cmsId": "privacy-policy-087",
+      "html": "If you have any questions or concerns about this Privacy Policy, please contact us."
+    },
+    {
+      "label": "‍",
+      "cmsId": "privacy-policy-088",
+      "html": "‍"
+    },
+    {
+      "label": "Contact",
+      "cmsId": "privacy-policy-098",
+      "html": "Contact"
+    },
+    {
+      "label": "Contact Us",
+      "cmsId": "privacy-policy-100",
+      "html": "Contact Us"
+    },
+    {
+      "label": "Main",
+      "cmsId": "privacy-policy-102",
+      "html": "Main"
+    },
+    {
+      "label": "Home",
+      "cmsId": "privacy-policy-105",
+      "html": "Home<br>"
+    },
+    {
+      "label": "About",
+      "cmsId": "privacy-policy-108",
+      "html": "About"
+    },
+    {
+      "label": "Services",
+      "cmsId": "privacy-policy-111",
+      "html": "Services"
+    },
+    {
+      "label": "platform",
+      "cmsId": "privacy-policy-114",
+      "html": "platform"
+    },
+    {
+      "label": "Careers",
+      "cmsId": "privacy-policy-117",
+      "html": "Careers"
+    },
+    {
+      "label": "Newsroom",
+      "cmsId": "privacy-policy-120",
+      "html": "Newsroom"
+    },
+    {
+      "label": "Support",
+      "cmsId": "privacy-policy-123",
+      "html": "Support"
+    },
+    {
+      "label": "404",
+      "cmsId": "privacy-policy-126",
+      "html": "404"
+    },
+    {
+      "label": "Privacy",
+      "cmsId": "privacy-policy-129",
+      "html": "Privacy"
+    },
+    {
+      "label": "Styleguide",
+      "cmsId": "privacy-policy-132",
+      "html": "Styleguide<br>"
+    },
+    {
+      "label": "License",
+      "cmsId": "privacy-policy-135",
+      "html": "License"
+    },
+    {
+      "label": "info@outbreaksafe.com",
+      "cmsId": "privacy-policy-138",
+      "html": "info@outbreaksafe.com"
+    },
+    {
+      "label": "Quick Contact",
+      "cmsId": "privacy-policy-139",
+      "html": "Quick Contact"
+    },
+    {
+      "label": "©2026. All rights reserved",
+      "cmsId": "privacy-policy-145",
+      "html": "©2026. All rights reserved"
+    }
+  ],
+  "links": [
+    {
+      "label": "Link 1",
+      "cmsId": "privacy-policy-004",
+      "href": "index.html"
+    },
+    {
+      "label": "Home",
+      "cmsId": "privacy-policy-015",
+      "href": "index.html"
+    },
+    {
+      "label": "Platform",
+      "cmsId": "privacy-policy-018",
+      "href": "platform.html"
+    },
+    {
+      "label": "About",
+      "cmsId": "privacy-policy-021",
+      "href": "about.html"
+    },
+    {
+      "label": "Careers",
+      "cmsId": "privacy-policy-024",
+      "href": "#"
+    },
+    {
+      "label": "Services",
+      "cmsId": "privacy-policy-027",
+      "href": "services.html"
+    },
+    {
+      "label": "Newsroom",
+      "cmsId": "privacy-policy-030",
+      "href": "#"
+    },
+    {
+      "label": "Send Us A Message",
+      "cmsId": "privacy-policy-036",
+      "href": "mailto:info@transit.com"
+    },
+    {
+      "label": "Request a Quote",
+      "cmsId": "privacy-policy-041",
+      "href": "contact.html"
+    },
+    {
+      "label": "Link 10",
+      "cmsId": "privacy-policy-049",
+      "href": "https://instagram.com"
+    },
+    {
+      "label": "Link 11",
+      "cmsId": "privacy-policy-052",
+      "href": "https://facebook.com"
+    },
+    {
+      "label": "Link 12",
+      "cmsId": "privacy-policy-055",
+      "href": "https://x.com"
+    },
+    {
+      "label": "Link 13",
+      "cmsId": "privacy-policy-058",
+      "href": "https://linkedin.com"
+    },
+    {
+      "label": "CONTACT US",
+      "cmsId": "privacy-policy-065",
+      "href": "contact.html"
+    },
+    {
+      "label": "Link 15",
+      "cmsId": "privacy-policy-096",
+      "href": "index.html"
+    },
+    {
+      "label": "Home",
+      "cmsId": "privacy-policy-104",
+      "href": "index.html"
+    },
+    {
+      "label": "About",
+      "cmsId": "privacy-policy-107",
+      "href": "about.html"
+    },
+    {
+      "label": "Services",
+      "cmsId": "privacy-policy-110",
+      "href": "services.html"
+    },
+    {
+      "label": "platform",
+      "cmsId": "privacy-policy-113",
+      "href": "platform.html"
+    },
+    {
+      "label": "Careers",
+      "cmsId": "privacy-policy-116",
+      "href": "#"
+    },
+    {
+      "label": "Newsroom",
+      "cmsId": "privacy-policy-119",
+      "href": "#"
+    },
+    {
+      "label": "404",
+      "cmsId": "privacy-policy-125",
+      "href": "#"
+    },
+    {
+      "label": "Privacy",
+      "cmsId": "privacy-policy-128",
+      "href": "privacy-policy.html"
+    },
+    {
+      "label": "Styleguide",
+      "cmsId": "privacy-policy-131",
+      "href": "/info/styleguide"
+    },
+    {
+      "label": "License",
+      "cmsId": "privacy-policy-134",
+      "href": "/info/license"
+    }
+  ],
+  "images": []
+}

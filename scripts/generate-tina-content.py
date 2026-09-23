@@ -15,6 +15,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parent.parent
+LEGACY_PAGES = ROOT / "legacy-pages"
 PAGES = ["index.html", "about.html", "services.html", "platform.html", "contact.html", "privacy-policy.html"]
 EDITABLE_TEXT_TAGS = {"h1", "h2", "h3", "h4", "h5", "h6", "p", "a", "button", "label", "li", "div", "span", "strong"}
 SKIP_ANCESTORS = {"script", "style", "svg", "noscript", "template"}
@@ -202,7 +203,7 @@ def migrate_page(path: Path):
         source = source.replace('<script src="site.js"></script>', '<script src="cms-content.js"></script>\n<script src="site.js"></script>')
 
     path.write_text(source, encoding="utf-8")
-    output = ROOT / "content" / "pages" / f"{slug}.json"
+    output = ROOT / "public" / "content" / "pages" / f"{slug}.json"
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps({
         "name": page_title,
@@ -216,7 +217,7 @@ def migrate_page(path: Path):
 
 def main():
     for filename in PAGES:
-        counts = migrate_page(ROOT / filename)
+        counts = migrate_page(LEGACY_PAGES / filename)
         print(f"{filename}: {counts[0]} text fields, {counts[1]} links, {counts[2]} images")
 
 
