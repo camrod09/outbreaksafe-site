@@ -6,7 +6,7 @@
   },
   "content": [
     {
-      "label": "main",
+      "label": "Contact — section marker",
       "cmsId": "contact-011",
       "html": "main<br>"
     },
@@ -111,7 +111,7 @@
       "html": "Contact Us"
     },
     {
-      "label": "Main",
+      "label": "Footer — main content",
       "cmsId": "contact-115",
       "html": "Main"
     },
@@ -194,7 +194,7 @@
   ],
   "links": [
     {
-      "label": "Link 1",
+      "label": "Header — logo link",
       "cmsId": "contact-004",
       "href": "index.html"
     },
@@ -239,22 +239,22 @@
       "href": "contact.html"
     },
     {
-      "label": "Link 10",
+      "label": "Footer — social link 1",
       "cmsId": "contact-049",
       "href": "https://instagram.com"
     },
     {
-      "label": "Link 11",
+      "label": "Footer — social link 2",
       "cmsId": "contact-052",
       "href": "https://facebook.com"
     },
     {
-      "label": "Link 12",
+      "label": "Footer — social link 3",
       "cmsId": "contact-055",
       "href": "https://x.com"
     },
     {
-      "label": "Link 13",
+      "label": "Footer — social link 4",
       "cmsId": "contact-058",
       "href": "https://linkedin.com"
     },
@@ -269,7 +269,7 @@
       "href": "mailto:info@fleet.com?subject=Hello"
     },
     {
-      "label": "Link 16",
+      "label": "Footer — logo link",
       "cmsId": "contact-109",
       "href": "index.html"
     },
@@ -326,7 +326,7 @@
   ],
   "images": [
     {
-      "label": "Image 1",
+      "label": "Contact — CTA background image",
       "cmsId": "contact-100",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2b83_sander-yigin-ki19VJAGh6w-unsplash%20(1).avif",
       "alt": ""

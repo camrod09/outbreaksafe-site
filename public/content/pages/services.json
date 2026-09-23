@@ -6,7 +6,7 @@
   },
   "content": [
     {
-      "label": "main",
+      "label": "Services — section marker",
       "cmsId": "services-011",
       "html": "main<br>"
     },
@@ -256,7 +256,7 @@
       "html": "Contact Us"
     },
     {
-      "label": "Main",
+      "label": "Footer — main content",
       "cmsId": "services-224",
       "html": "Main"
     },
@@ -345,7 +345,7 @@
   ],
   "links": [
     {
-      "label": "Link 1",
+      "label": "Header — logo link",
       "cmsId": "services-004",
       "href": "index.html"
     },
@@ -390,22 +390,22 @@
       "href": "contact.html"
     },
     {
-      "label": "Link 10",
+      "label": "Footer — social link 1",
       "cmsId": "services-049",
       "href": "https://instagram.com"
     },
     {
-      "label": "Link 11",
+      "label": "Footer — social link 2",
       "cmsId": "services-052",
       "href": "https://facebook.com"
     },
     {
-      "label": "Link 12",
+      "label": "Footer — social link 3",
       "cmsId": "services-055",
       "href": "https://x.com"
     },
     {
-      "label": "Link 13",
+      "label": "Footer — social link 4",
       "cmsId": "services-058",
       "href": "https://linkedin.com"
     },
@@ -460,7 +460,7 @@
       "href": "contact.html"
     },
     {
-      "label": "Link 24",
+      "label": "Footer — logo link",
       "cmsId": "services-218",
       "href": "index.html"
     },
@@ -517,61 +517,61 @@
   ],
   "images": [
     {
-      "label": "Image 1",
+      "label": "Services — service feature image",
       "cmsId": "services-147",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2b95_elevate-dI-aXC7DWpQ-unsplash%20(2).webp",
       "alt": ""
     },
     {
-      "label": "Image 2",
+      "label": "Services — industry image 1",
       "cmsId": "services-160",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2bb2_michael-afonso-BQgAYwERXhs-unsplash%20(1)%20(1).avif",
       "alt": ""
     },
     {
-      "label": "Image 3",
+      "label": "Services — industry image 2",
       "cmsId": "services-162",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2bb6_ryan-klaus-fiq7BrQl8nE-unsplash.webp",
       "alt": ""
     },
     {
-      "label": "Image 4",
+      "label": "Services — industry image 3",
       "cmsId": "services-164",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2bb5_andrej-lisakov-QK4Aoyp28eY-unsplash%20(1).webp",
       "alt": ""
     },
     {
-      "label": "Image 5",
+      "label": "Services — industry image 4",
       "cmsId": "services-166",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2bb4_klara-kulikova-yjQDnOhGE34-unsplash%20(2).webp",
       "alt": ""
     },
     {
-      "label": "Image 6",
+      "label": "Services — industry image 5",
       "cmsId": "services-168",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2bae_getty-images-XFXblhxScNc-unsplash%20(1).avif",
       "alt": ""
     },
     {
-      "label": "Image 7",
+      "label": "Services — industry image 6",
       "cmsId": "services-170",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2bb1_jc-gellidon-UIp163xCV6w-unsplash%20(1).avif",
       "alt": ""
     },
     {
-      "label": "Image 8",
+      "label": "Services — industry image 7",
       "cmsId": "services-172",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2bb0_m-cooper-xdBNenLCAc0-unsplash%20(1).avif",
       "alt": ""
     },
     {
-      "label": "Image 9",
+      "label": "Services — industry image 8",
       "cmsId": "services-174",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2baf_laura-jaeger-PzxSdc2a-1A-unsplash%20(1).avif",
       "alt": ""
     },
     {
-      "label": "Image 10",
+      "label": "Services — CTA background image",
       "cmsId": "services-206",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2b7a_tim-schmidbauer-2pBo7hWjzIc-unsplash%20(1).avif",
       "alt": ""

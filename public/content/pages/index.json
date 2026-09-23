@@ -6,7 +6,7 @@
   },
   "content": [
     {
-      "label": "main",
+      "label": "Homepage — section marker",
       "cmsId": "index-014",
       "html": "main<br>"
     },
@@ -306,7 +306,7 @@
       "html": "Contact Us"
     },
     {
-      "label": "Main",
+      "label": "Footer — main content",
       "cmsId": "index-261",
       "html": "Main"
     },
@@ -389,7 +389,7 @@
   ],
   "links": [
     {
-      "label": "Link 1",
+      "label": "Header — logo link",
       "cmsId": "index-007",
       "href": "index.html"
     },
@@ -434,22 +434,22 @@
       "href": "contact.html"
     },
     {
-      "label": "Link 10",
+      "label": "Footer — social link 1",
       "cmsId": "index-052",
       "href": "https://instagram.com"
     },
     {
-      "label": "Link 11",
+      "label": "Footer — social link 2",
       "cmsId": "index-055",
       "href": "https://facebook.com"
     },
     {
-      "label": "Link 12",
+      "label": "Footer — social link 3",
       "cmsId": "index-058",
       "href": "https://x.com"
     },
     {
-      "label": "Link 13",
+      "label": "Footer — social link 4",
       "cmsId": "index-061",
       "href": "https://linkedin.com"
     },
@@ -469,7 +469,7 @@
       "href": "contact.html"
     },
     {
-      "label": "Link 17",
+      "label": "Footer — logo link",
       "cmsId": "index-255",
       "href": "index.html"
     },
@@ -526,79 +526,79 @@
   ],
   "images": [
     {
-      "label": "Image 1",
+      "label": "Homepage — hero technology image",
       "cmsId": "index-133",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a09aea557f9c63fb50ff3ae_pexels-matin-18604894.jpg",
       "alt": ""
     },
     {
-      "label": "Image 2",
+      "label": "Homepage — technology image 1",
       "cmsId": "index-156",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2b93_kanhaiya-sharma-EiAqej-cGks-unsplash%20(1).webp",
       "alt": ""
     },
     {
-      "label": "Image 3",
+      "label": "Homepage — technology image 2",
       "cmsId": "index-161",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2b69_bernd-dittrich-eCc7FjMoR74-unsplash%20(1).avif",
       "alt": ""
     },
     {
-      "label": "Image 4",
+      "label": "Team — Camilo Rodriguez — photo",
       "cmsId": "index-189",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a09b2a6b996c99aff0989b8_8.jpg",
       "alt": ""
     },
     {
-      "label": "Image 5",
+      "label": "Team — Ryan De Vincentis — photo",
       "cmsId": "index-194",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a09b2a6db043deec93a7e9d_7.jpg",
       "alt": ""
     },
     {
-      "label": "Image 6",
+      "label": "Team — Tim Blanche — photo",
       "cmsId": "index-199",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a09b2a6916c426e6c676148_4.jpg",
       "alt": ""
     },
     {
-      "label": "Image 7",
+      "label": "Team — Wesley Lawrence — photo",
       "cmsId": "index-204",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a09b2a64d585f3f9430392a_5.jpg",
       "alt": ""
     },
     {
-      "label": "Image 8",
+      "label": "Team — Prof. Sharath Sriram — photo",
       "cmsId": "index-209",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a09b2a65553c62e406bb4fc_6.jpg",
       "alt": ""
     },
     {
-      "label": "Image 9",
+      "label": "Team — Dr Lee Krahe — photo",
       "cmsId": "index-214",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a09ba97f7926b95002997cd_9.jpg",
       "alt": ""
     },
     {
-      "label": "Image 10",
+      "label": "Team — Ryan Foote — photo",
       "cmsId": "index-219",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a09b2ae0689a5095e7fb3ef_10.jpg",
       "alt": ""
     },
     {
-      "label": "Image 11",
+      "label": "Team — Prof. Catherine Bennett — photo",
       "cmsId": "index-224",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a09b2a648a20b4c5c7678d1_1.jpg",
       "alt": ""
     },
     {
-      "label": "Image 12",
+      "label": "Team — Prof. Gjoko Muratovski — photo",
       "cmsId": "index-229",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a09b2a6c92f0cc1de45a6dd_2.jpg",
       "alt": ""
     },
     {
-      "label": "Image 13",
+      "label": "Homepage — CTA background image",
       "cmsId": "index-243",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2b7a_tim-schmidbauer-2pBo7hWjzIc-unsplash%20(1).avif",
       "alt": ""

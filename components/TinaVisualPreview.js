@@ -72,11 +72,35 @@ function safeTextHtml(value) {
   return template.innerHTML;
 }
 
+function applySplitWords(element, value) {
+  const words = String(value || "").trim().split(/\s+/).filter(Boolean);
+  const spans = [...element.querySelectorAll(":scope > .gsap_split_word")];
+  if (!spans.length || !words.length) return;
+  while (spans.length < words.length) {
+    const clone = spans[spans.length - 1].cloneNode(false);
+    clone.className = `gsap_split_word gsap_split_word${spans.length + 1}`;
+    element.appendChild(document.createTextNode(" "));
+    element.appendChild(clone);
+    spans.push(clone);
+  }
+  spans.forEach((span, index) => {
+    if (index < words.length) {
+      span.textContent = words[index];
+      span.hidden = false;
+    } else {
+      span.hidden = true;
+    }
+  });
+  element.setAttribute("aria-label", words.join(" "));
+}
+
 function applyTinaContent(root, page) {
   if (!root || !page) return;
   (page.content || []).forEach((item) => {
     const element = root.querySelector(`[data-cms-id="${CSS.escape(item.cmsId)}"]`);
-    if (element && typeof item.html === "string") element.innerHTML = safeTextHtml(item.html);
+    if (!element || typeof item.html !== "string") return;
+    if (item.mode === "splitWords") applySplitWords(element, item.html);
+    else element.innerHTML = safeTextHtml(item.html);
   });
   (page.links || []).forEach((item) => {
     const element = root.querySelector(`[data-cms-id="${CSS.escape(item.cmsId)}"]`);

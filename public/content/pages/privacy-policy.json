@@ -6,7 +6,7 @@
   },
   "content": [
     {
-      "label": "main",
+      "label": "Privacy Policy — section marker",
       "cmsId": "privacy-policy-011",
       "html": "main<br>"
     },
@@ -151,7 +151,7 @@
       "html": "Contact Us"
     },
     {
-      "label": "Main",
+      "label": "Footer — main content",
       "cmsId": "privacy-policy-102",
       "html": "Main"
     },
@@ -228,7 +228,7 @@
   ],
   "links": [
     {
-      "label": "Link 1",
+      "label": "Header — logo link",
       "cmsId": "privacy-policy-004",
       "href": "index.html"
     },
@@ -273,22 +273,22 @@
       "href": "contact.html"
     },
     {
-      "label": "Link 10",
+      "label": "Footer — social link 1",
       "cmsId": "privacy-policy-049",
       "href": "https://instagram.com"
     },
     {
-      "label": "Link 11",
+      "label": "Footer — social link 2",
       "cmsId": "privacy-policy-052",
       "href": "https://facebook.com"
     },
     {
-      "label": "Link 12",
+      "label": "Footer — social link 3",
       "cmsId": "privacy-policy-055",
       "href": "https://x.com"
     },
     {
-      "label": "Link 13",
+      "label": "Footer — social link 4",
       "cmsId": "privacy-policy-058",
       "href": "https://linkedin.com"
     },
@@ -298,7 +298,7 @@
       "href": "contact.html"
     },
     {
-      "label": "Link 15",
+      "label": "Footer — logo link",
       "cmsId": "privacy-policy-096",
       "href": "index.html"
     },

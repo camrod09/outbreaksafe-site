@@ -6,7 +6,7 @@
   },
   "content": [
     {
-      "label": "main",
+      "label": "About — section marker",
       "cmsId": "about-011",
       "html": "main<br>"
     },
@@ -431,7 +431,7 @@
       "html": "Contact Us"
     },
     {
-      "label": "Main",
+      "label": "Footer — main content",
       "cmsId": "about-420",
       "html": "Main"
     },
@@ -520,7 +520,7 @@
   ],
   "links": [
     {
-      "label": "Link 1",
+      "label": "Header — logo link",
       "cmsId": "about-004",
       "href": "index.html"
     },
@@ -565,22 +565,22 @@
       "href": "contact.html"
     },
     {
-      "label": "Link 10",
+      "label": "Footer — social link 1",
       "cmsId": "about-049",
       "href": "https://instagram.com"
     },
     {
-      "label": "Link 11",
+      "label": "Footer — social link 2",
       "cmsId": "about-052",
       "href": "https://facebook.com"
     },
     {
-      "label": "Link 12",
+      "label": "Footer — social link 3",
       "cmsId": "about-055",
       "href": "https://x.com"
     },
     {
-      "label": "Link 13",
+      "label": "Footer — social link 4",
       "cmsId": "about-058",
       "href": "https://linkedin.com"
     },
@@ -600,7 +600,7 @@
       "href": "contact.html"
     },
     {
-      "label": "Link 17",
+      "label": "Footer — logo link",
       "cmsId": "about-414",
       "href": "index.html"
     },
@@ -657,157 +657,157 @@
   ],
   "images": [
     {
-      "label": "Image 1",
+      "label": "About — slider control icon 1",
       "cmsId": "about-251",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2b7e_Left_Arrow.svg",
       "alt": ""
     },
     {
-      "label": "Image 2",
+      "label": "About — slider control icon 2",
       "cmsId": "about-253",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2b7e_Left_Arrow.svg",
       "alt": ""
     },
     {
-      "label": "Image 3",
+      "label": "About — slider control icon 3",
       "cmsId": "about-257",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2b7d_Right%20Arrow.svg",
       "alt": ""
     },
     {
-      "label": "Image 4",
+      "label": "About — slider control icon 4",
       "cmsId": "about-259",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2b7d_Right%20Arrow.svg",
       "alt": ""
     },
     {
-      "label": "Image 5",
+      "label": "About — partner logo 1",
       "cmsId": "about-274",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2ade_Logo_5.svg",
       "alt": ""
     },
     {
-      "label": "Image 6",
+      "label": "About — partner logo 2",
       "cmsId": "about-276",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2adf_Logo_6.svg",
       "alt": ""
     },
     {
-      "label": "Image 7",
+      "label": "About — partner logo 3",
       "cmsId": "about-278",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2ae0_Logo_1.svg",
       "alt": ""
     },
     {
-      "label": "Image 8",
+      "label": "About — partner logo 4",
       "cmsId": "about-280",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2ae5_Logo_2.svg",
       "alt": ""
     },
     {
-      "label": "Image 9",
+      "label": "About — partner logo 5",
       "cmsId": "about-282",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2aed_Logo_3.svg",
       "alt": ""
     },
     {
-      "label": "Image 10",
+      "label": "About — partner logo 6",
       "cmsId": "about-284",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2af0_Logo_4.svg",
       "alt": ""
     },
     {
-      "label": "Image 11",
+      "label": "About — partner logo 7",
       "cmsId": "about-287",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2ade_Logo_5.svg",
       "alt": ""
     },
     {
-      "label": "Image 12",
+      "label": "About — partner logo 8",
       "cmsId": "about-289",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2adf_Logo_6.svg",
       "alt": ""
     },
     {
-      "label": "Image 13",
+      "label": "About — partner logo 9",
       "cmsId": "about-291",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2ae0_Logo_1.svg",
       "alt": ""
     },
     {
-      "label": "Image 14",
+      "label": "About — partner logo 10",
       "cmsId": "about-293",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2ae5_Logo_2.svg",
       "alt": ""
     },
     {
-      "label": "Image 15",
+      "label": "About — partner logo 11",
       "cmsId": "about-295",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2aed_Logo_3.svg",
       "alt": ""
     },
     {
-      "label": "Image 16",
+      "label": "About — partner logo 12",
       "cmsId": "about-297",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2af0_Logo_4.svg",
       "alt": ""
     },
     {
-      "label": "Image 17",
+      "label": "Team — John Mossier — photo",
       "cmsId": "about-323",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2b8f_FLORA-Portrait%20Photography-8b0afac4.avif",
       "alt": ""
     },
     {
-      "label": "Image 18",
+      "label": "Team — Stacy Freed — photo",
       "cmsId": "about-331",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2b90_FLORA-Blonde%20Portrait-06d54782.avif",
       "alt": ""
     },
     {
-      "label": "Image 19",
+      "label": "Team — Matt Longst — photo",
       "cmsId": "about-339",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2b91_FLORA-Professional%20Portrait-f3dc8467.avif",
       "alt": ""
     },
     {
-      "label": "Image 20",
+      "label": "Team — Nicole Sue — photo",
       "cmsId": "about-347",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2b8e_FLORA-Professional%20Portrait-b194397b.avif",
       "alt": ""
     },
     {
-      "label": "Image 21",
+      "label": "Team — Melanie Lumon — photo",
       "cmsId": "about-355",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2b8d_FLORA-Professional%20Photo-c6262cb3.avif",
       "alt": ""
     },
     {
-      "label": "Image 22",
+      "label": "About — slider control icon 5",
       "cmsId": "about-360",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2b7e_Left_Arrow.svg",
       "alt": ""
     },
     {
-      "label": "Image 23",
+      "label": "About — slider control icon 6",
       "cmsId": "about-362",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2b7e_Left_Arrow.svg",
       "alt": ""
     },
     {
-      "label": "Image 24",
+      "label": "About — slider control icon 7",
       "cmsId": "about-366",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2b7d_Right%20Arrow.svg",
       "alt": ""
     },
     {
-      "label": "Image 25",
+      "label": "About — slider control icon 8",
       "cmsId": "about-368",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2b7d_Right%20Arrow.svg",
       "alt": ""
     },
     {
-      "label": "Image 26",
+      "label": "About — CTA background image",
       "cmsId": "about-402",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2b7a_tim-schmidbauer-2pBo7hWjzIc-unsplash%20(1).avif",
       "alt": ""

@@ -6,7 +6,7 @@
   },
   "content": [
     {
-      "label": "main",
+      "label": "Platform — section marker",
       "cmsId": "platform-011",
       "html": "main<br>"
     },
@@ -226,7 +226,7 @@
       "html": "Contact Us"
     },
     {
-      "label": "Main",
+      "label": "Footer — main content",
       "cmsId": "platform-210",
       "html": "Main"
     },
@@ -315,7 +315,7 @@
   ],
   "links": [
     {
-      "label": "Link 1",
+      "label": "Header — logo link",
       "cmsId": "platform-004",
       "href": "index.html"
     },
@@ -360,22 +360,22 @@
       "href": "contact.html"
     },
     {
-      "label": "Link 10",
+      "label": "Footer — social link 1",
       "cmsId": "platform-049",
       "href": "https://instagram.com"
     },
     {
-      "label": "Link 11",
+      "label": "Footer — social link 2",
       "cmsId": "platform-052",
       "href": "https://facebook.com"
     },
     {
-      "label": "Link 12",
+      "label": "Footer — social link 3",
       "cmsId": "platform-055",
       "href": "https://x.com"
     },
     {
-      "label": "Link 13",
+      "label": "Footer — social link 4",
       "cmsId": "platform-058",
       "href": "https://linkedin.com"
     },
@@ -390,7 +390,7 @@
       "href": "contact.html"
     },
     {
-      "label": "Link 16",
+      "label": "Footer — logo link",
       "cmsId": "platform-204",
       "href": "index.html"
     },
@@ -447,61 +447,61 @@
   ],
   "images": [
     {
-      "label": "Image 1",
+      "label": "Platform — interface mockup",
       "cmsId": "platform-098",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2bb8_iPad%20Mockup%20Light.webp",
       "alt": ""
     },
     {
-      "label": "Image 2",
+      "label": "Platform — product image 1",
       "cmsId": "platform-105",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2bb9_1.1.webp",
       "alt": ""
     },
     {
-      "label": "Image 3",
+      "label": "Platform — product image 2",
       "cmsId": "platform-122",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2bb9_1.1.webp",
       "alt": ""
     },
     {
-      "label": "Image 4",
+      "label": "Platform — capability illustration 1",
       "cmsId": "platform-152",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2bad_1.svg",
       "alt": ""
     },
     {
-      "label": "Image 5",
+      "label": "Platform — capability illustration 2",
       "cmsId": "platform-157",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2bac_2.svg",
       "alt": ""
     },
     {
-      "label": "Image 6",
+      "label": "Platform — capability illustration 3",
       "cmsId": "platform-162",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2baa_4.svg",
       "alt": ""
     },
     {
-      "label": "Image 7",
+      "label": "Platform — capability illustration 4",
       "cmsId": "platform-167",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2ba8_5.svg",
       "alt": ""
     },
     {
-      "label": "Image 8",
+      "label": "Platform — capability illustration 5",
       "cmsId": "platform-172",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2bab_3.svg",
       "alt": ""
     },
     {
-      "label": "Image 9",
+      "label": "Platform — capability illustration 6",
       "cmsId": "platform-177",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2ba9_6.svg",
       "alt": ""
     },
     {
-      "label": "Image 10",
+      "label": "Platform — CTA background image",
       "cmsId": "platform-192",
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2b7a_tim-schmidbauer-2pBo7hWjzIc-unsplash%20(1).avif",
       "alt": ""
