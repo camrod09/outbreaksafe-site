@@ -603,5 +603,141 @@
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2b7a_tim-schmidbauer-2pBo7hWjzIc-unsplash%20(1).avif",
       "alt": ""
     }
+  ],
+  "blocks": [
+    {
+      "_template": "hero",
+      "heading": "A clearer understanding of your environment.",
+      "text": "Learn about our tech",
+      "ctaLabel": "Explore Platform",
+      "ctaLink": "platform.html",
+      "image": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a09aea557f9c63fb50ff3ae_pexels-matin-18604894.jpg",
+      "imageAlt": ""
+    },
+    {
+      "_template": "featureCards",
+      "eyebrow": "What We ENABLE",
+      "heading": "What We ENABLE",
+      "cards": [
+        {
+          "heading": "Device Integration ",
+          "text": "OutbreakSafe technology sits inside select devices, helping them recognise airborne biological signals in real time."
+        },
+        {
+          "heading": "Cloud Interpretation ",
+          "text": "Connected devices can access secure cloud tools that analyse signal patterns and provide clear, easy‑to‑read environmental information."
+        },
+        {
+          "heading": "Advanced Materials Science ",
+          "text": "Our platform is built on molecular technology designed to identify the presence of specific biological structures in the air."
+        }
+      ]
+    },
+    {
+      "_template": "technologyGrid",
+      "heading": "Our Technology",
+      "items": [
+        {
+          "heading": "Environmental Detection ",
+          "text": "Technology assisting devices to identify airborne biological signals forming the foundation of real‑time pathogen awareness.",
+          "image": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a09aea557f9c63fb50ff3ae_pexels-matin-18604894.jpg",
+          "imageAlt": ""
+        },
+        {
+          "heading": "Data Intelligence",
+          "text": "Captured signals are interpreted through secure cloud frameworks, transforming raw detection into actionable environmental insights for partners multi sector applications.",
+          "image": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2b93_kanhaiya-sharma-EiAqej-cGks-unsplash%20(1).webp",
+          "imageAlt": ""
+        },
+        {
+          "heading": "Applied Integration",
+          "text": "Collaboration with manufacturers to embed detection capability into everyday devices — expanding access to intelligent environmental monitoring worldwide.",
+          "image": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2b69_bernd-dittrich-eCc7FjMoR74-unsplash%20(1).avif",
+          "imageAlt": ""
+        }
+      ]
+    },
+    {
+      "_template": "imageText",
+      "heading": "Our Ai- Driven logistics fuels agile global supply chains.",
+      "linkLabel": "Explore Platform",
+      "link": "platform.html",
+      "image": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2b93_kanhaiya-sharma-EiAqej-cGks-unsplash%20(1).webp",
+      "imageAlt": ""
+    },
+    {
+      "_template": "richText",
+      "heading": "OUR MISSION",
+      "richBody": "We exist to make airborne biological detection accessible, intelligent, and seamlessly integrated into everyday life."
+    },
+    {
+      "_template": "teamGrid",
+      "heading": "The Team",
+      "members": [
+        {
+          "name": "Camilo Rodriguez",
+          "role": "Co - Founder Chief Executive Officer",
+          "image": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a09b2a6b996c99aff0989b8_8.jpg",
+          "imageAlt": ""
+        },
+        {
+          "name": "Ryan De Vincentis",
+          "role": "Co - Founder ",
+          "image": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a09b2a6db043deec93a7e9d_7.jpg",
+          "imageAlt": ""
+        },
+        {
+          "name": "Tim Blanche",
+          "role": "Advisor",
+          "image": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a09b2a6916c426e6c676148_4.jpg",
+          "imageAlt": ""
+        },
+        {
+          "name": "Wesley Lawrence",
+          "role": "Advisor",
+          "image": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a09b2a64d585f3f9430392a_5.jpg",
+          "imageAlt": ""
+        },
+        {
+          "name": "Prof. Sharath Sriram",
+          "role": "Technology Advisor",
+          "image": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a09b2a65553c62e406bb4fc_6.jpg",
+          "imageAlt": ""
+        },
+        {
+          "name": "Dr Lee Krahe",
+          "role": "Advisor",
+          "image": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a09ba97f7926b95002997cd_9.jpg",
+          "imageAlt": ""
+        },
+        {
+          "name": "Ryan Foote",
+          "role": "Advisor",
+          "image": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a09b2ae0689a5095e7fb3ef_10.jpg",
+          "imageAlt": ""
+        },
+        {
+          "name": "Prof. Catherine Bennett",
+          "role": "Scientific Advisor",
+          "image": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a09b2a648a20b4c5c7678d1_1.jpg",
+          "imageAlt": ""
+        },
+        {
+          "name": "Prof. Gjoko Muratovski",
+          "role": "Strategy & Innovation Advisor ",
+          "image": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a09b2a6c92f0cc1de45a6dd_2.jpg",
+          "imageAlt": ""
+        }
+      ]
+    },
+    {
+      "_template": "cta",
+      "eyebrow": "Let's Connect",
+      "heading": "Moving Your Business Forward",
+      "ctaLabel": "Contact Us",
+      "ctaLink": "contact.html",
+      "backgroundImage": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2b7a_tim-schmidbauer-2pBo7hWjzIc-unsplash%20(1).avif",
+      "backgroundAlt": ""
+    }
   ]
 }

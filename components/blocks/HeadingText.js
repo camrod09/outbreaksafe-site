@@ -1,0 +1,2 @@
+import { Text, field, alignmentClass, widthClass } from "./BlockText";
+export default function HeadingText({ block }) { return <section className={`section ${alignmentClass(block.alignment)}`} data-tina-field={field(block)}><div className={`container ${widthClass(block.textWidth)}`}><Text as="div" className="mono-text" item={block} name="eyebrow" /><Text as="h2" className="display-3xl" item={block} name="heading" /><Text item={block} name="text" /></div></section>; }

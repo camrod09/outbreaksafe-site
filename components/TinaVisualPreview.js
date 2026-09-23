@@ -2,6 +2,7 @@ import Head from "next/head";
 import Script from "next/script";
 import { useEffect, useRef, useMemo } from "react";
 import { tinaField, useTina } from "tinacms/dist/react";
+import Blocks from "./blocks/Blocks";
 
 const PAGE_URLS = {
   "index.html": "/",
@@ -29,6 +30,9 @@ const TINA_PREVIEW_STYLES = `
   transform: none !important;
   visibility: visible !important;
   transition: none !important;
+}
+.tina-preview-root .button-secondary .button-background {
+  pointer-events: none !important;
 }
 `;
 
@@ -153,7 +157,7 @@ function applyTinaContent(root, page) {
   });
 }
 
-export default function TinaVisualPreview({ styles, body, data, query, variables }) {
+export default function TinaVisualPreview({ styles, body, data, query, variables, isHomepage = false }) {
   const { data: tinaData } = useTina({
     query,
     variables,
@@ -165,12 +169,13 @@ export default function TinaVisualPreview({ styles, body, data, query, variables
   const rootRef = useRef(null);
   const page = tinaData?.page || data.page;
   const initialPage = useRef(tinaData?.page || data.page).current;
+  const usesBlocks = isHomepage && Array.isArray(page.blocks);
   // Keep the annotated legacy DOM stable; live Tina data is applied in place below.
   const previewBody = useMemo(() => addTinaFields(body, initialPage), [body, initialPage]);
 
   useEffect(() => {
-    applyTinaContent(rootRef.current, page);
-  }, [page]);
+    if (!usesBlocks) applyTinaContent(rootRef.current, page);
+  }, [page, usesBlocks]);
 
   return (
     <>
@@ -185,12 +190,10 @@ export default function TinaVisualPreview({ styles, body, data, query, variables
         ))}
         <style dangerouslySetInnerHTML={{ __html: TINA_PREVIEW_STYLES }} />
       </Head>
-      <div
-        className="tina-preview-root"
-        ref={rootRef}
-        dangerouslySetInnerHTML={{ __html: previewBody }}
-      />
-      <Script src="/site.js" strategy="afterInteractive" />
+      <div className="tina-preview-root" ref={rootRef}>
+        {usesBlocks ? <Blocks blocks={page.blocks} /> : <div dangerouslySetInnerHTML={{ __html: previewBody }} />}
+      </div>
+      {usesBlocks ? null : <Script src="/site.js" strategy="afterInteractive" />}
     </>
   );
 }

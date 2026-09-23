@@ -1,0 +1,2 @@
+import { Button, Text, field } from "./BlockText";
+export default function Cta({ block }) { return <section className="section" data-tina-field={field(block)}>{block.backgroundImage ? <img className="grid-image" src={block.backgroundImage} alt={block.backgroundAlt || ""} data-tina-field={field(block, "backgroundImage")} /> : null}<div className="container"><Text as="div" className="mono-text" item={block} name="eyebrow" /><Text as="h2" className="display-3xl" item={block} name="heading" /><Text item={block} name="body" /><Button item={block} /></div></section>; }

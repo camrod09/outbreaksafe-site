@@ -1,0 +1,2 @@
+import { Text, field, alignmentClass, widthClass } from "./BlockText";
+export default function RichText({ block }) { return <section className={`section ${alignmentClass(block.alignment)}`} data-tina-field={field(block)}><div className={`container content-wrap ${widthClass(block.maxWidth)}`}><Text as="h2" className="display-3xl" item={block} name="heading" /><Text item={block} name="richBody" /></div></section>; }

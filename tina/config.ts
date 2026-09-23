@@ -113,6 +113,160 @@ export default defineConfig({
               { type: "string", name: "alt", label: "Alternative text" },
             ],
           },
+          {
+            type: "object",
+            name: "blocks",
+            label: "Homepage blocks",
+            list: true,
+            ui: {
+              itemProps: (item) => ({ label: item?.heading || item?.title || item?.label || "Block" }),
+            },
+            templates: [
+              {
+                name: "hero",
+                label: "Hero",
+                fields: [
+                  { type: "string", name: "eyebrow", label: "Eyebrow" },
+                  { type: "string", name: "heading", label: "Heading", ui: { component: "textarea" } },
+                  { type: "string", name: "text", label: "Supporting text", ui: { component: "textarea" } },
+                  { type: "string", name: "ctaLabel", label: "Button label" },
+                  { type: "string", name: "ctaLink", label: "Button link" },
+                  { type: "string", name: "secondaryCtaLabel", label: "Secondary button label" },
+                  { type: "string", name: "secondaryCtaLink", label: "Secondary button link" },
+                  { type: "image", name: "image", label: "Image" },
+                  { type: "string", name: "imageAlt", label: "Image alternative text" },
+                ],
+              },
+              {
+                name: "headingText",
+                label: "Heading and text",
+                fields: [
+                  { type: "string", name: "eyebrow", label: "Eyebrow" },
+                  { type: "string", name: "heading", label: "Heading" },
+                  { type: "string", name: "text", label: "Text", ui: { component: "textarea" } },
+                  { type: "string", name: "textWidth", label: "Text width", options: ["narrow", "standard", "wide"] },
+                  { type: "string", name: "alignment", label: "Alignment", options: ["left", "center", "right"] },
+                ],
+              },
+              {
+                name: "richText",
+                label: "Rich text",
+                fields: [
+                  { type: "string", name: "heading", label: "Heading" },
+                  { type: "string", name: "richBody", label: "Rich text body", ui: { component: "textarea" } },
+                  { type: "string", name: "maxWidth", label: "Maximum width", options: ["narrow", "standard", "wide"] },
+                  { type: "string", name: "alignment", label: "Alignment", options: ["left", "center", "right"] },
+                ],
+              },
+              {
+                name: "imageText",
+                label: "Image and text",
+                fields: [
+                  { type: "string", name: "eyebrow", label: "Eyebrow" },
+                  { type: "string", name: "heading", label: "Heading" },
+                  { type: "string", name: "text", label: "Text", ui: { component: "textarea" } },
+                  { type: "image", name: "image", label: "Image" },
+                  { type: "string", name: "imageAlt", label: "Image alternative text" },
+                  { type: "string", name: "linkLabel", label: "Link label" },
+                  { type: "string", name: "link", label: "Link" },
+                ],
+              },
+              {
+                name: "fullWidthImage",
+                label: "Full-width image",
+                fields: [
+                  { type: "image", name: "image", label: "Image" },
+                  { type: "string", name: "alt", label: "Alternative text" },
+                  { type: "string", name: "caption", label: "Caption" },
+                ],
+              },
+              {
+                name: "featureCards",
+                label: "Feature cards",
+                fields: [
+                  { type: "string", name: "eyebrow", label: "Eyebrow" },
+                  { type: "string", name: "heading", label: "Heading" },
+                  {
+                    type: "object", name: "cards", label: "Cards", list: true,
+                    ui: { itemProps: (item) => ({ label: item?.heading || "Feature" }) },
+                    fields: [
+                      { type: "string", name: "heading", label: "Heading" },
+                      { type: "string", name: "text", label: "Text", ui: { component: "textarea" } },
+                      { type: "image", name: "image", label: "Icon or image" },
+                      { type: "string", name: "imageAlt", label: "Image alternative text" },
+                      { type: "string", name: "linkLabel", label: "Link label" },
+                      { type: "string", name: "link", label: "Link" },
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "technologyGrid",
+                label: "Technology grid",
+                fields: [
+                  { type: "string", name: "eyebrow", label: "Eyebrow" },
+                  { type: "string", name: "heading", label: "Heading" },
+                  {
+                    type: "object", name: "items", label: "Technology items", list: true,
+                    ui: { itemProps: (item) => ({ label: item?.heading || "Technology item" }) },
+                    fields: [
+                      { type: "string", name: "heading", label: "Heading" },
+                      { type: "string", name: "text", label: "Text", ui: { component: "textarea" } },
+                      { type: "image", name: "image", label: "Image" },
+                      { type: "string", name: "imageAlt", label: "Image alternative text" },
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "teamGrid",
+                label: "Team grid",
+                fields: [
+                  { type: "string", name: "heading", label: "Heading" },
+                  {
+                    type: "object", name: "members", label: "Team members", list: true,
+                    ui: { itemProps: (item) => ({ label: item?.name || "Team member" }) },
+                    fields: [
+                      { type: "string", name: "name", label: "Name" },
+                      { type: "string", name: "role", label: "Role" },
+                      { type: "image", name: "image", label: "Photo" },
+                      { type: "string", name: "imageAlt", label: "Photo alternative text" },
+                      { type: "string", name: "profileLink", label: "Profile link" },
+                    ],
+                  },
+                ],
+              },
+              {
+                name: "cta",
+                label: "Call to action",
+                fields: [
+                  { type: "string", name: "eyebrow", label: "Eyebrow" },
+                  { type: "string", name: "heading", label: "Heading" },
+                  { type: "string", name: "ctaLabel", label: "Button label" },
+                  { type: "string", name: "ctaLink", label: "Button link" },
+                  { type: "string", name: "body", label: "Body", ui: { component: "textarea" } },
+                  { type: "image", name: "backgroundImage", label: "Background image" },
+                  { type: "string", name: "backgroundAlt", label: "Background image alternative text" },
+                ],
+              },
+              {
+                name: "spacer",
+                label: "Spacer or divider",
+                fields: [
+                  { type: "string", name: "label", label: "Editor label" },
+                  { type: "string", name: "size", label: "Space", options: ["small", "medium", "large"] },
+                  { type: "boolean", name: "divider", label: "Show divider" },
+                ],
+              },
+              {
+                name: "divider",
+                label: "Divider",
+                fields: [
+                  { type: "string", name: "label", label: "Editor label" },
+                ],
+              },
+            ],
+          },
         ],
       },
     ],

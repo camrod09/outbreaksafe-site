@@ -1,0 +1,2 @@
+import { Text, field } from "./BlockText";
+export default function FullWidthImage({ block }) { return <section className="section" data-tina-field={field(block)}><div className="container">{block.image ? <img className="grid-image" src={block.image} alt={block.alt || ""} data-tina-field={field(block, "image")} /> : null}<Text as="p" className="mono-text" item={block} name="caption" /></div></section>; }
