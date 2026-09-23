@@ -12,6 +12,26 @@ const PAGE_URLS = {
   "privacy-policy.html": "/privacy-policy",
 };
 
+const TINA_PREVIEW_STYLES = `
+.tina-preview-root .animation-up-0-1,
+.tina-preview-root .animation-up-0-1.motion-visible {
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
+  transition: none !important;
+}
+.tina-preview-root .gsap_split_word,
+.tina-preview-root .gsap_split_word.motion-visible,
+.tina-preview-root .gsap_split_word-mask,
+.tina-preview-root .gsap_split_line,
+.tina-preview-root .gsap_split_line-mask {
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
+  transition: none !important;
+}
+`;
+
 function toPublicUrl(url) {
   if (/^(?:[a-z][a-z\d+.-]*:|\/\/|#)/i.test(url)) return url;
   const match = url.match(/^([^?#]+)([?#].*)?$/);
@@ -163,8 +183,13 @@ export default function TinaVisualPreview({ styles, body, data, query, variables
         {styles.map((style, index) => (
           <style key={index} dangerouslySetInnerHTML={{ __html: style }} />
         ))}
+        <style dangerouslySetInnerHTML={{ __html: TINA_PREVIEW_STYLES }} />
       </Head>
-      <div ref={rootRef} dangerouslySetInnerHTML={{ __html: previewBody }} />
+      <div
+        className="tina-preview-root"
+        ref={rootRef}
+        dangerouslySetInnerHTML={{ __html: previewBody }}
+      />
       <Script src="/site.js" strategy="afterInteractive" />
     </>
   );
