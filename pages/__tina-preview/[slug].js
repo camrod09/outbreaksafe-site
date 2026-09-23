@@ -2,8 +2,9 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import Head from "next/head";
 import Script from "next/script";
-import { addMetadata, hashFromQuery, tinaField, useTina } from "tinacms/dist/react";
+import { tinaField, useTina } from "tinacms/dist/react";
 import { useEffect, useRef } from "react";
+import client from "../../tina/__generated__/client";
 
 const PAGE_FILES = {
   index: "index.html",
@@ -22,19 +23,6 @@ const PAGE_URLS = {
   "contact.html": "/contact",
   "privacy-policy.html": "/privacy-policy",
 };
-
-const PAGE_QUERY = `query TinaVisualPage($relativePath: String!) {
-  page(relativePath: $relativePath) {
-    ... on Document {
-      _sys { filename relativePath }
-    }
-    name
-    seo { title description }
-    content { label cmsId mode html }
-    links { label cmsId href }
-    images { label cmsId src alt }
-  }
-}`;
 
 function toPublicUrl(url) {
   if (/^(?:[a-z][a-z\d+.-]*:|\/\/|#)/i.test(url)) return url;
@@ -79,15 +67,15 @@ function escapeAttribute(value) {
 
 function addTinaFields(markup, page) {
   const fields = new Map();
-  (page.content || []).forEach((item, index) => {
-    fields.set(item.cmsId, tinaField(item, "html") || `content.${index}.html`);
+  (page.content || []).forEach((item) => {
+    fields.set(item.cmsId, tinaField(item, "html"));
   });
-  (page.links || []).forEach((item, index) => {
-    fields.set(`${item.cmsId}:href`, tinaField(item, "href") || `links.${index}.href`);
+  (page.links || []).forEach((item) => {
+    fields.set(`${item.cmsId}:href`, tinaField(item, "href"));
   });
-  (page.images || []).forEach((item, index) => {
-    fields.set(`${item.cmsId}:src`, tinaField(item, "src") || `images.${index}.src`);
-    fields.set(`${item.cmsId}:alt`, tinaField(item, "alt") || `images.${index}.alt`);
+  (page.images || []).forEach((item) => {
+    fields.set(`${item.cmsId}:src`, tinaField(item, "src"));
+    fields.set(`${item.cmsId}:alt`, tinaField(item, "alt"));
   });
 
   return markup.replace(
@@ -144,21 +132,19 @@ export async function getServerSideProps({ params }) {
   const filename = PAGE_FILES[slug];
   if (!filename) return { notFound: true };
 
-  const [source, page] = await Promise.all([
+  const [source, tinaResponse] = await Promise.all([
     fs.readFile(path.join(process.cwd(), "legacy-pages", filename), "utf8"),
-    fs.readFile(path.join(process.cwd(), "public", "content", "pages", `${slug}.json`), "utf8")
-      .then(JSON.parse),
+    client.queries.page({ relativePath: `${slug}.json` }),
   ]);
-  const data = addMetadata(hashFromQuery(PAGE_QUERY), { page });
 
   return {
     props: {
       source,
       styles: extractStyles(source),
       body: extractBody(source),
-      data,
-      query: PAGE_QUERY,
-      variables: { relativePath: `${slug}.json` },
+      data: tinaResponse.data,
+      query: tinaResponse.query,
+      variables: tinaResponse.variables,
     },
   };
 }
