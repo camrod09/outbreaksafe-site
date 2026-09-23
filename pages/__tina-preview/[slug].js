@@ -150,7 +150,14 @@ export async function getServerSideProps({ params }) {
 }
 
 export default function TinaVisualPreview({ source, styles, body, data, query, variables }) {
-  const { data: tinaData } = useTina({ query, variables, data });
+  const { data: tinaData } = useTina({
+    query,
+    variables,
+    data,
+    experimental___selectFormByFormId() {
+      return `public/content/pages/${variables.relativePath}`;
+    },
+  });
   const rootRef = useRef(null);
   const page = tinaData?.page || data.page;
   const previewBody = addTinaFields(body, page);
