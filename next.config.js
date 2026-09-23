@@ -2,6 +2,7 @@
 const nextConfig = {
   outputFileTracingIncludes: {
     "/[[...slug]]": ["./legacy-pages/**"],
+    "/tina-preview/[slug]": ["./legacy-pages/**"],
   },
 };
 
