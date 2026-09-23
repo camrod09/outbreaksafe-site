@@ -44,6 +44,11 @@ export default defineConfig({
             create: false,
             delete: false,
           },
+          router: ({ document }) => {
+            const filename = (document?._sys?.filename || document?._sys?.basename || "index")
+              .replace(/\.json$/, "");
+            return `/__tina-preview/${filename}`;
+          },
         },
         fields: [
           {
