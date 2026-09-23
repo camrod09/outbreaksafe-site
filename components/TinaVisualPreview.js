@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Script from "next/script";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useMemo } from "react";
 import { tinaField, useTina } from "tinacms/dist/react";
 
 const PAGE_URLS = {
@@ -74,21 +74,40 @@ function safeTextHtml(value) {
 
 function applySplitWords(element, value) {
   const words = String(value || "").trim().split(/\s+/).filter(Boolean);
-  const spans = [...element.querySelectorAll(":scope > .gsap_split_word")];
+  const masks = [...element.children].filter((child) => (
+    child.classList.contains("gsap_split_word-mask")
+  ));
+  const spans = masks.length
+    ? masks.map((mask) => mask.querySelector(":scope > .gsap_split_word")).filter(Boolean)
+    : [...element.querySelectorAll(":scope > .gsap_split_word")];
   if (!spans.length || !words.length) return;
   while (spans.length < words.length) {
-    const clone = spans[spans.length - 1].cloneNode(false);
-    clone.className = `gsap_split_word gsap_split_word${spans.length + 1}`;
+    const index = spans.length + 1;
+    const last = spans[spans.length - 1];
+    const lastMask = last.closest(".gsap_split_word-mask");
+    const wrapper = lastMask ? lastMask.cloneNode(true) : last.cloneNode(false);
+    const clone = lastMask
+      ? wrapper.querySelector(":scope > .gsap_split_word")
+      : wrapper;
+    if (lastMask) {
+      wrapper.className = `gsap_split_word-mask gsap_split_word${index}-mask`;
+    }
+    clone.className = `gsap_split_word gsap_split_word${index}`;
+    clone.removeAttribute("data-cms-id");
+    clone.removeAttribute("data-tina-field");
     element.appendChild(document.createTextNode(" "));
-    element.appendChild(clone);
+    element.appendChild(wrapper);
     spans.push(clone);
   }
   spans.forEach((span, index) => {
+    const mask = span.closest(".gsap_split_word-mask");
     if (index < words.length) {
       span.textContent = words[index];
       span.hidden = false;
+      if (mask) mask.hidden = false;
     } else {
       span.hidden = true;
+      if (mask) mask.hidden = true;
     }
   });
   element.setAttribute("aria-label", words.join(" "));
@@ -125,7 +144,9 @@ export default function TinaVisualPreview({ styles, body, data, query, variables
   });
   const rootRef = useRef(null);
   const page = tinaData?.page || data.page;
-  const previewBody = addTinaFields(body, page);
+  const initialPage = useRef(tinaData?.page || data.page).current;
+  // Keep the annotated legacy DOM stable; live Tina data is applied in place below.
+  const previewBody = useMemo(() => addTinaFields(body, initialPage), [body, initialPage]);
 
   useEffect(() => {
     applyTinaContent(rootRef.current, page);
