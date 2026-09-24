@@ -495,25 +495,5 @@
       "src": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2b7a_tim-schmidbauer-2pBo7hWjzIc-unsplash%20(1).avif",
       "alt": ""
     }
-  ],
-  "blocks": [
-    {
-      "eyebrow": "ertyuio",
-      "heading": "345tyuio",
-      "cards": [
-        {
-          "heading": "ertghjkl;",
-          "text": "dfvgbhnjmk,l."
-        },
-        {
-          "heading": "ertyui",
-          "text": "4567y89",
-          "imageAlt": "tgyhujio",
-          "linkLabel": "tyuio",
-          "link": "rtyui"
-        }
-      ],
-      "_template": "featureCards"
-    }
   ]
 }
