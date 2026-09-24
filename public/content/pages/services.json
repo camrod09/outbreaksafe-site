@@ -498,11 +498,19 @@
   ],
   "blocks": [
     {
+      "eyebrow": "ertyuio",
       "heading": "345tyuio",
       "cards": [
         {
           "heading": "ertghjkl;",
           "text": "dfvgbhnjmk,l."
+        },
+        {
+          "heading": "ertyui",
+          "text": "4567y89",
+          "imageAlt": "tgyhujio",
+          "linkLabel": "tyuio",
+          "link": "rtyui"
         }
       ],
       "_template": "featureCards"
