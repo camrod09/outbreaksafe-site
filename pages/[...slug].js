@@ -49,7 +49,7 @@ function adaptLegacyMarkup(markup) {
 }
 
 /**
- * The marketing pages are intentionally served as their verified HTML source.
+ * Non-homepage marketing pages are intentionally served as their verified HTML source.
  * This avoids reimplementing the large Webflow-derived layouts in React while
  * keeping the requested URLs, Tina hooks, metadata, and client scripts intact.
  */

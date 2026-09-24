@@ -2,7 +2,7 @@ import Head from "next/head";
 import Script from "next/script";
 import { useEffect, useRef, useMemo } from "react";
 import { tinaField, useTina } from "tinacms/dist/react";
-import Blocks from "./blocks/Blocks";
+import Homepage from "./Homepage";
 
 const PAGE_URLS = {
   "index.html": "/",
@@ -169,7 +169,7 @@ export default function TinaVisualPreview({ styles, body, data, query, variables
   const rootRef = useRef(null);
   const page = tinaData?.page || data.page;
   const initialPage = useRef(tinaData?.page || data.page).current;
-  const usesBlocks = isHomepage && Array.isArray(page.blocks);
+  const usesBlocks = isHomepage;
   // Keep the annotated legacy DOM stable; live Tina data is applied in place below.
   const previewBody = useMemo(() => addTinaFields(body, initialPage), [body, initialPage]);
 
@@ -185,13 +185,13 @@ export default function TinaVisualPreview({ styles, body, data, query, variables
         <link rel="stylesheet" href="/site.css" />
         <link rel="stylesheet" href="/2f76b9d2697264b9" />
         <link rel="icon" href="/outbreaksafe-logo.svg" type="image/svg+xml" />
-        {styles.map((style, index) => (
+        {isHomepage ? null : styles.map((style, index) => (
           <style key={index} dangerouslySetInnerHTML={{ __html: style }} />
         ))}
         <style dangerouslySetInnerHTML={{ __html: TINA_PREVIEW_STYLES }} />
       </Head>
       <div className="tina-preview-root" ref={rootRef}>
-        {usesBlocks ? <Blocks blocks={page.blocks} /> : <div dangerouslySetInnerHTML={{ __html: previewBody }} />}
+        {usesBlocks ? <Homepage page={page} /> : <div dangerouslySetInnerHTML={{ __html: previewBody }} />}
       </div>
       {usesBlocks ? null : <Script src="/site.js" strategy="afterInteractive" />}
     </>
