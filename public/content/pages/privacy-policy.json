@@ -26,29 +26,14 @@
       "html": "About"
     },
     {
-      "label": "Careers",
-      "cmsId": "privacy-policy-024",
-      "html": "Careers"
-    },
-    {
       "label": "Services",
       "cmsId": "privacy-policy-027",
       "html": "Services"
     },
     {
-      "label": "Newsroom",
-      "cmsId": "privacy-policy-030",
-      "html": "Newsroom"
-    },
-    {
       "label": "Contact",
       "cmsId": "privacy-policy-033",
       "html": "Contact<br>"
-    },
-    {
-      "label": "Send Us A Message",
-      "cmsId": "privacy-policy-038",
-      "html": "Send Us A Message"
     },
     {
       "label": "Request a Quote",
@@ -64,11 +49,6 @@
       "label": "Address",
       "cmsId": "privacy-policy-061",
       "html": "Address"
-    },
-    {
-      "label": "123 Main St, San Francisco, CA 94105",
-      "cmsId": "privacy-policy-062",
-      "html": "123 Main St, <br>San Francisco, CA 94105"
     },
     {
       "label": "CONTACT US",
@@ -176,16 +156,6 @@
       "html": "platform"
     },
     {
-      "label": "Careers",
-      "cmsId": "privacy-policy-117",
-      "html": "Careers"
-    },
-    {
-      "label": "Newsroom",
-      "cmsId": "privacy-policy-120",
-      "html": "Newsroom"
-    },
-    {
       "label": "Support",
       "cmsId": "privacy-policy-123",
       "html": "Support"
@@ -199,16 +169,6 @@
       "label": "Privacy",
       "cmsId": "privacy-policy-129",
       "html": "Privacy"
-    },
-    {
-      "label": "Styleguide",
-      "cmsId": "privacy-policy-132",
-      "html": "Styleguide<br>"
-    },
-    {
-      "label": "License",
-      "cmsId": "privacy-policy-135",
-      "html": "License"
     },
     {
       "label": "info@outbreaksafe.com",
@@ -248,24 +208,9 @@
       "href": "about.html"
     },
     {
-      "label": "Careers",
-      "cmsId": "privacy-policy-024",
-      "href": "#"
-    },
-    {
       "label": "Services",
       "cmsId": "privacy-policy-027",
       "href": "services.html"
-    },
-    {
-      "label": "Newsroom",
-      "cmsId": "privacy-policy-030",
-      "href": "#"
-    },
-    {
-      "label": "Send Us A Message",
-      "cmsId": "privacy-policy-036",
-      "href": "mailto:info@transit.com"
     },
     {
       "label": "Request a Quote",
@@ -323,16 +268,6 @@
       "href": "platform.html"
     },
     {
-      "label": "Careers",
-      "cmsId": "privacy-policy-116",
-      "href": "#"
-    },
-    {
-      "label": "Newsroom",
-      "cmsId": "privacy-policy-119",
-      "href": "#"
-    },
-    {
       "label": "404",
       "cmsId": "privacy-policy-125",
       "href": "#"
@@ -341,16 +276,6 @@
       "label": "Privacy",
       "cmsId": "privacy-policy-128",
       "href": "privacy-policy.html"
-    },
-    {
-      "label": "Styleguide",
-      "cmsId": "privacy-policy-131",
-      "href": "/info/styleguide"
-    },
-    {
-      "label": "License",
-      "cmsId": "privacy-policy-134",
-      "href": "/info/license"
     }
   ],
   "images": []

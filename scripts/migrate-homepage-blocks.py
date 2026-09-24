@@ -38,13 +38,11 @@ page["blocks"] = [
         {"heading": text("index-136"), "text": text("index-137"), **image("index-156")},
         {"heading": text("index-141"), "text": text("index-142"), **image("index-161")},
     ]},
-    {"_template": "imageText", "heading": f"{text('index-154')} {text('index-157')} {text('index-159')}",
-     "linkLabel": text("index-165"), "link": links["index-163"], **image("index-156")},
-    {"_template": "richText", "heading": text("index-173"), "text": text("index-176")},
+    {"_template": "richText", "heading": text("index-173"), "richBody": text("index-176")},
     {"_template": "teamGrid", "heading": text("index-185"), "members": [
         {"name": text(name), "role": text(role), **image(photo)} for photo, name, role in team_ids
     ]},
-    {"_template": "cta", "eyebrow": text("index-237"), "heading": text("index-240"),
+    {"_template": "cta", "eyebrow": text("index-237"),
      "ctaLabel": text("index-246"), "ctaLink": links["index-244"],
      "backgroundImage": images["index-243"]["src"], "backgroundAlt": images["index-243"]["alt"]},
 ]

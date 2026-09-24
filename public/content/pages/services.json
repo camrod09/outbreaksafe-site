@@ -26,29 +26,14 @@
       "html": "About"
     },
     {
-      "label": "Careers",
-      "cmsId": "services-024",
-      "html": "Careers"
-    },
-    {
       "label": "Services",
       "cmsId": "services-027",
       "html": "Services"
     },
     {
-      "label": "Newsroom",
-      "cmsId": "services-030",
-      "html": "Newsroom"
-    },
-    {
       "label": "Contact",
       "cmsId": "services-033",
       "html": "Contact<br>"
-    },
-    {
-      "label": "Send Us A Message",
-      "cmsId": "services-038",
-      "html": "Send Us A Message"
     },
     {
       "label": "Request a Quote",
@@ -64,11 +49,6 @@
       "label": "Address",
       "cmsId": "services-061",
       "html": "Address"
-    },
-    {
-      "label": "123 Main St, San Francisco, CA 94105",
-      "cmsId": "services-062",
-      "html": "123 Main St, <br>San Francisco, CA 94105"
     },
     {
       "label": "CONTACT US",
@@ -281,16 +261,6 @@
       "html": "platform"
     },
     {
-      "label": "Careers",
-      "cmsId": "services-239",
-      "html": "Careers"
-    },
-    {
-      "label": "Newsroom",
-      "cmsId": "services-242",
-      "html": "Newsroom"
-    },
-    {
       "label": "Support",
       "cmsId": "services-245",
       "html": "Support"
@@ -304,16 +274,6 @@
       "label": "Privacy",
       "cmsId": "services-251",
       "html": "Privacy"
-    },
-    {
-      "label": "Styleguide",
-      "cmsId": "services-254",
-      "html": "Styleguide<br>"
-    },
-    {
-      "label": "License",
-      "cmsId": "services-257",
-      "html": "License"
     },
     {
       "label": "info@outbreaksafe.com",
@@ -335,12 +295,6 @@
       "cmsId": "services-heading-001",
       "mode": "splitWords",
       "html": "Our Services"
-    },
-    {
-      "label": "Moving Your Business Forward",
-      "cmsId": "services-heading-002",
-      "mode": "splitWords",
-      "html": "Moving Your Business Forward"
     }
   ],
   "links": [
@@ -365,24 +319,9 @@
       "href": "about.html"
     },
     {
-      "label": "Careers",
-      "cmsId": "services-024",
-      "href": "#"
-    },
-    {
       "label": "Services",
       "cmsId": "services-027",
       "href": "services.html"
-    },
-    {
-      "label": "Newsroom",
-      "cmsId": "services-030",
-      "href": "#"
-    },
-    {
-      "label": "Send Us A Message",
-      "cmsId": "services-036",
-      "href": "mailto:info@transit.com"
     },
     {
       "label": "Request a Quote",
@@ -485,16 +424,6 @@
       "href": "platform.html"
     },
     {
-      "label": "Careers",
-      "cmsId": "services-238",
-      "href": "#"
-    },
-    {
-      "label": "Newsroom",
-      "cmsId": "services-241",
-      "href": "#"
-    },
-    {
       "label": "404",
       "cmsId": "services-247",
       "href": "#"
@@ -503,16 +432,6 @@
       "label": "Privacy",
       "cmsId": "services-250",
       "href": "privacy-policy.html"
-    },
-    {
-      "label": "Styleguide",
-      "cmsId": "services-253",
-      "href": "/info/styleguide"
-    },
-    {
-      "label": "License",
-      "cmsId": "services-256",
-      "href": "/info/license"
     }
   ],
   "images": [

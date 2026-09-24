@@ -26,29 +26,14 @@
       "html": "About"
     },
     {
-      "label": "Careers",
-      "cmsId": "about-024",
-      "html": "Careers"
-    },
-    {
       "label": "Services",
       "cmsId": "about-027",
       "html": "Services"
     },
     {
-      "label": "Newsroom",
-      "cmsId": "about-030",
-      "html": "Newsroom"
-    },
-    {
       "label": "Contact",
       "cmsId": "about-033",
       "html": "Contact<br>"
-    },
-    {
-      "label": "Send Us A Message",
-      "cmsId": "about-038",
-      "html": "Send Us A Message"
     },
     {
       "label": "Request a Quote",
@@ -64,11 +49,6 @@
       "label": "Address",
       "cmsId": "about-061",
       "html": "Address"
-    },
-    {
-      "label": "123 Main St, San Francisco, CA 94105",
-      "cmsId": "about-062",
-      "html": "123 Main St, <br>San Francisco, CA 94105"
     },
     {
       "label": "CONTACT US",
@@ -401,16 +381,6 @@
       "html": "Work with Us"
     },
     {
-      "label": "Explore careers with us and shape the future of global logistics",
-      "cmsId": "about-382",
-      "html": "Explore careers with us and shape the future of global logistics"
-    },
-    {
-      "label": "Explore Careers",
-      "cmsId": "about-386",
-      "html": "Explore Careers"
-    },
-    {
       "label": "Let's Connect",
       "cmsId": "about-392",
       "html": "Let's Connect"
@@ -456,16 +426,6 @@
       "html": "platform"
     },
     {
-      "label": "Careers",
-      "cmsId": "about-435",
-      "html": "Careers"
-    },
-    {
-      "label": "Newsroom",
-      "cmsId": "about-438",
-      "html": "Newsroom"
-    },
-    {
       "label": "Support",
       "cmsId": "about-441",
       "html": "Support"
@@ -479,16 +439,6 @@
       "label": "Privacy",
       "cmsId": "about-447",
       "html": "Privacy"
-    },
-    {
-      "label": "Styleguide",
-      "cmsId": "about-450",
-      "html": "Styleguide<br>"
-    },
-    {
-      "label": "License",
-      "cmsId": "about-453",
-      "html": "License"
     },
     {
       "label": "info@outbreaksafe.com",
@@ -510,12 +460,6 @@
       "cmsId": "about-heading-001",
       "mode": "splitWords",
       "html": "Learn About Fleet"
-    },
-    {
-      "label": "Moving Your Business Forward",
-      "cmsId": "about-heading-002",
-      "mode": "splitWords",
-      "html": "Moving Your Business Forward"
     }
   ],
   "links": [
@@ -540,24 +484,9 @@
       "href": "about.html"
     },
     {
-      "label": "Careers",
-      "cmsId": "about-024",
-      "href": "#"
-    },
-    {
       "label": "Services",
       "cmsId": "about-027",
       "href": "services.html"
-    },
-    {
-      "label": "Newsroom",
-      "cmsId": "about-030",
-      "href": "#"
-    },
-    {
-      "label": "Send Us A Message",
-      "cmsId": "about-036",
-      "href": "mailto:info@transit.com"
     },
     {
       "label": "Request a Quote",
@@ -590,11 +519,6 @@
       "href": "contact.html"
     },
     {
-      "label": "Explore Careers",
-      "cmsId": "about-384",
-      "href": "#"
-    },
-    {
       "label": "Contact Us",
       "cmsId": "about-403",
       "href": "contact.html"
@@ -625,16 +549,6 @@
       "href": "platform.html"
     },
     {
-      "label": "Careers",
-      "cmsId": "about-434",
-      "href": "#"
-    },
-    {
-      "label": "Newsroom",
-      "cmsId": "about-437",
-      "href": "#"
-    },
-    {
       "label": "404",
       "cmsId": "about-443",
       "href": "#"
@@ -643,16 +557,6 @@
       "label": "Privacy",
       "cmsId": "about-446",
       "href": "privacy-policy.html"
-    },
-    {
-      "label": "Styleguide",
-      "cmsId": "about-449",
-      "href": "/info/styleguide"
-    },
-    {
-      "label": "License",
-      "cmsId": "about-452",
-      "href": "/info/license"
     }
   ],
   "images": [

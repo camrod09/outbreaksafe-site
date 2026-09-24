@@ -26,29 +26,14 @@
       "html": "About"
     },
     {
-      "label": "Careers",
-      "cmsId": "contact-024",
-      "html": "Careers"
-    },
-    {
       "label": "Services",
       "cmsId": "contact-027",
       "html": "Services"
     },
     {
-      "label": "Newsroom",
-      "cmsId": "contact-030",
-      "html": "Newsroom"
-    },
-    {
       "label": "Contact",
       "cmsId": "contact-033",
       "html": "Contact<br>"
-    },
-    {
-      "label": "Send Us A Message",
-      "cmsId": "contact-038",
-      "html": "Send Us A Message"
     },
     {
       "label": "Request a Quote",
@@ -64,11 +49,6 @@
       "label": "Address",
       "cmsId": "contact-061",
       "html": "Address"
-    },
-    {
-      "label": "123 Main St, San Francisco, CA 94105",
-      "cmsId": "contact-062",
-      "html": "123 Main St, <br>San Francisco, CA 94105"
     },
     {
       "label": "CONTACT US",
@@ -136,16 +116,6 @@
       "html": "platform"
     },
     {
-      "label": "Careers",
-      "cmsId": "contact-130",
-      "html": "Careers"
-    },
-    {
-      "label": "Newsroom",
-      "cmsId": "contact-133",
-      "html": "Newsroom"
-    },
-    {
       "label": "Support",
       "cmsId": "contact-136",
       "html": "Support"
@@ -159,16 +129,6 @@
       "label": "Privacy",
       "cmsId": "contact-142",
       "html": "Privacy"
-    },
-    {
-      "label": "Styleguide",
-      "cmsId": "contact-145",
-      "html": "Styleguide<br>"
-    },
-    {
-      "label": "License",
-      "cmsId": "contact-148",
-      "html": "License"
     },
     {
       "label": "info@outbreaksafe.com",
@@ -214,24 +174,9 @@
       "href": "about.html"
     },
     {
-      "label": "Careers",
-      "cmsId": "contact-024",
-      "href": "#"
-    },
-    {
       "label": "Services",
       "cmsId": "contact-027",
       "href": "services.html"
-    },
-    {
-      "label": "Newsroom",
-      "cmsId": "contact-030",
-      "href": "#"
-    },
-    {
-      "label": "Send Us A Message",
-      "cmsId": "contact-036",
-      "href": "mailto:info@transit.com"
     },
     {
       "label": "Request a Quote",
@@ -294,16 +239,6 @@
       "href": "platform.html"
     },
     {
-      "label": "Careers",
-      "cmsId": "contact-129",
-      "href": "#"
-    },
-    {
-      "label": "Newsroom",
-      "cmsId": "contact-132",
-      "href": "#"
-    },
-    {
       "label": "404",
       "cmsId": "contact-138",
       "href": "#"
@@ -312,16 +247,6 @@
       "label": "Privacy",
       "cmsId": "contact-141",
       "href": "privacy-policy.html"
-    },
-    {
-      "label": "Styleguide",
-      "cmsId": "contact-144",
-      "href": "/info/styleguide"
-    },
-    {
-      "label": "License",
-      "cmsId": "contact-147",
-      "href": "/info/license"
     }
   ],
   "images": [

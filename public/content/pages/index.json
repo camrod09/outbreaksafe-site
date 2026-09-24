@@ -26,29 +26,14 @@
       "html": "About"
     },
     {
-      "label": "Careers",
-      "cmsId": "index-027",
-      "html": "Careers"
-    },
-    {
       "label": "Services",
       "cmsId": "index-030",
       "html": "Services"
     },
     {
-      "label": "Newsroom",
-      "cmsId": "index-033",
-      "html": "Newsroom"
-    },
-    {
       "label": "Contact",
       "cmsId": "index-036",
       "html": "Contact<br>"
-    },
-    {
-      "label": "Send Us A Message",
-      "cmsId": "index-041",
-      "html": "Send Us A Message"
     },
     {
       "label": "Request a Quote",
@@ -64,11 +49,6 @@
       "label": "Address",
       "cmsId": "index-064",
       "html": "Address"
-    },
-    {
-      "label": "123 Main St, San Francisco, CA 94105",
-      "cmsId": "index-065",
-      "html": "123 Main St, <br>San Francisco, CA 94105"
     },
     {
       "label": "CONTACT US",
@@ -154,21 +134,6 @@
       "label": "Our Technology",
       "cmsId": "index-151",
       "html": "Our Technology"
-    },
-    {
-      "label": "Our Ai- Driven",
-      "cmsId": "index-154",
-      "html": "Our Ai- Driven"
-    },
-    {
-      "label": "logistics fuels",
-      "cmsId": "index-157",
-      "html": "logistics fuels"
-    },
-    {
-      "label": "agile global supply chains.",
-      "cmsId": "index-159",
-      "html": "agile global supply chains."
     },
     {
       "label": "Explore Platform",
@@ -286,11 +251,6 @@
       "html": "Let's Connect"
     },
     {
-      "label": "Moving Your Business Forward",
-      "cmsId": "index-240",
-      "html": "Moving Your Business Forward"
-    },
-    {
       "label": "Contact Us",
       "cmsId": "index-246",
       "html": "Contact Us"
@@ -331,16 +291,6 @@
       "html": "platform"
     },
     {
-      "label": "Careers",
-      "cmsId": "index-276",
-      "html": "Careers"
-    },
-    {
-      "label": "Newsroom",
-      "cmsId": "index-279",
-      "html": "Newsroom"
-    },
-    {
       "label": "Support",
       "cmsId": "index-282",
       "html": "Support"
@@ -354,16 +304,6 @@
       "label": "Privacy",
       "cmsId": "index-288",
       "html": "Privacy"
-    },
-    {
-      "label": "Styleguide",
-      "cmsId": "index-291",
-      "html": "Styleguide<br>"
-    },
-    {
-      "label": "License",
-      "cmsId": "index-294",
-      "html": "License"
     },
     {
       "label": "info@outbreaksafe.com",
@@ -409,24 +349,9 @@
       "href": "about.html"
     },
     {
-      "label": "Careers",
-      "cmsId": "index-027",
-      "href": "#"
-    },
-    {
       "label": "Services",
       "cmsId": "index-030",
       "href": "services.html"
-    },
-    {
-      "label": "Newsroom",
-      "cmsId": "index-033",
-      "href": "#"
-    },
-    {
-      "label": "Send Us A Message",
-      "cmsId": "index-039",
-      "href": "mailto:info@transit.com"
     },
     {
       "label": "Request a Quote",
@@ -494,16 +419,6 @@
       "href": "platform.html"
     },
     {
-      "label": "Careers",
-      "cmsId": "index-275",
-      "href": "#"
-    },
-    {
-      "label": "Newsroom",
-      "cmsId": "index-278",
-      "href": "#"
-    },
-    {
       "label": "404",
       "cmsId": "index-284",
       "href": "#"
@@ -512,16 +427,6 @@
       "label": "Privacy",
       "cmsId": "index-287",
       "href": "privacy-policy.html"
-    },
-    {
-      "label": "Styleguide",
-      "cmsId": "index-290",
-      "href": "/info/styleguide"
-    },
-    {
-      "label": "License",
-      "cmsId": "index-293",
-      "href": "/info/license"
     }
   ],
   "images": [
@@ -658,14 +563,6 @@
       ]
     },
     {
-      "_template": "imageText",
-      "heading": "Our Ai- Driven logistics fuels agile global supply chains.",
-      "linkLabel": "Explore Platform",
-      "link": "platform.html",
-      "image": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2b93_kanhaiya-sharma-EiAqej-cGks-unsplash%20(1).webp",
-      "imageAlt": ""
-    },
-    {
       "_template": "richText",
       "heading": "OUR MISSION",
       "richBody": "We exist to make airborne biological detection accessible, intelligent, and seamlessly integrated into everyday life."
@@ -733,7 +630,6 @@
     {
       "_template": "cta",
       "eyebrow": "Let's Connect",
-      "heading": "Moving Your Business Forward",
       "ctaLabel": "Contact Us",
       "ctaLink": "contact.html",
       "backgroundImage": "https://cdn.prod.website-files.com/6a0978f26f6f2f061c8c289b/6a0978f36f6f2f061c8c2b7a_tim-schmidbauer-2pBo7hWjzIc-unsplash%20(1).avif",
