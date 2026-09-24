@@ -133,7 +133,6 @@ export default defineConfig({
                   { type: "string", name: "ctaLink", label: "Button link" },
                   { type: "string", name: "secondaryCtaLabel", label: "Secondary button label" },
                   { type: "string", name: "secondaryCtaLink", label: "Secondary button link" },
-                  { type: "string", name: "mediaType", label: "Background media type", options: ["interactive", "image", "video", "none"] },
                   { type: "image", name: "image", label: "Image" },
                   { type: "string", name: "imageAlt", label: "Image alternative text" },
                 ],
